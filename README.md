@@ -53,3 +53,10 @@
 </p>
 <br>
 <strong>PROJETO EM DESENVOLVIMENTO INCIAL</strong> dessa forma pode haver mudanças constantes ao longo do desenvolvimento.
+<br>
+<br>
+<br>
+
+<h2>Algumas imagens do projeto até o último commit feito:</h2>
+
+!(.vscode/screenshots/screenshot1.jpg)
