@@ -58,5 +58,7 @@
 <br>
 
 <h2>Algumas imagens do projeto até o último commit feito:</h2>
+<br>
+<br>
 
-!(.vscode/screenshots/screenshot1.jpg)
+<img src=".vscode/screenshots/screenshot1.jpg" />
