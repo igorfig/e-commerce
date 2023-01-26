@@ -47,7 +47,7 @@
 	- <strong>/carrinho</strong> ( Página com os produtos adicionados no carrinho pelo usuário, os produtos do carrinho serão mantidos salvos no Local Storage do browser.)
 	<br>
 	<br>
-	- <strong/dashboard</strong> (Acessada apenas pelo root da página através de autenticação. Aqui será a página pro root atualizar estoque e outras informações sobre os produtos da "loja")
+	- <strong>/dashboard</strong> (Acessada apenas pelo root da página através de autenticação. Aqui será a página pro root atualizar estoque e outras informações sobre os produtos da "loja")
 	<br>
 	<br>
 	- <strong>/produto/processadores</strong> ( Página de produtos que mostrará os produtos por categorias, por exemplo "Processadores".)
