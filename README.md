@@ -6,6 +6,19 @@
 </p>
 <br>
 <br>
+
+<h2> Tecnologias utilizadas: </h2>
+
+https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white
+https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
+https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
+https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white
+https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
+
+<br>
+<br>
 ## Atualizações
 <br>
 
@@ -47,7 +60,7 @@
 <br>
 <br>
 <p>
-	A parte de produtos, estoque, informações, valores, etc... Será mantida no backend Node.js por um banco de dados feito em PostgreSQL.
+	A parte de produtos, estoque, informações, valores, etc... Será mantida no backend com Express.js por um banco de dados feito em PostgreSQL.
 	<br>
 	Todos os produtos e suas informações são recebidos atráves do banco de dados.
 </p>
