@@ -45,4 +45,11 @@
 	<br>
 </p>
 <br>
+<br>
+<p>
+	A parte de produtos, estoque, informações, valores, etc... Será mantida no backend Node.js por um banco de dados feito em PostgreSQL.
+	<br>
+	Todos os produtos e suas informações são recebidos atráves do banco de dados.
+</p>
+<br>
 <strong>PROJETO EM DESENVOLVIMENTO INCIAL</strong> dessa forma pode haver mudanças constantes ao longo do desenvolvimento.
