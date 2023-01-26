@@ -65,7 +65,7 @@
 	Todos os produtos e suas informações são recebidos atráves do banco de dados.
 </p>
 <br>
-<strong>PROJETO EM DESENVOLVIMENTO INCIAL</strong> dessa forma pode haver mudanças constantes ao longo do desenvolvimento.
+<strong>PROJETO EM DESENVOLVIMENTO INICIAL</strong> dessa forma pode haver mudanças constantes ao longo do desenvolvimento.
 <br>
 <br>
 <br>
