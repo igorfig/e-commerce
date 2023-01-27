@@ -35,15 +35,18 @@ export const Container = styled.div`
 export const SidebarHeader = styled.div`
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 	width: 100%;
 	padding-top: 1rem;	
 
-	& > div {
+	div:first-child {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		width: 100%;
-		padding: 0 2rem;
-		position: absolute;
-		top: 6rem;
+		margin-bottom: 1rem;
 	}
+
 `
 
 export const Logo = styled.span`
@@ -58,17 +61,10 @@ export const Logo = styled.span`
 `
 
 export const Button = styled.button`
-	position: absolute;
-	display: block;
 	padding: 1rem 1.8rem;
-	right: 0;
 	background: transparent;
 	border: none;
 	outline: none;
-`
-
-export const SearchFieldContainer = styled.div`
-	
 `
 
 export const ResultList = styled.ul`
@@ -76,6 +72,7 @@ export const ResultList = styled.ul`
 	width: 100%;
 	max-height: 350px;
 	padding: 1rem;
+	margin-top: 1rem;
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 1rem;

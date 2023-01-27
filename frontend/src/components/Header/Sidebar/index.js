@@ -45,20 +45,20 @@ export function Sidebar({ isActive }) {
 		<SidebarOverlay Sidebar={isActive}>
 			<Container>
 				<SidebarHeader>
-					<Logo>
-						<span>
-							L
-							<sup>
-								S
-							</sup>
-						</span>
-					</Logo>
-					<Button onClick={handleCloseSidebar}>
-						<img src={menuImg} />
-					</Button>
 					<div>
-						<SearchBar />
-					</div>	
+						<Logo>
+							<span>
+								L
+								<sup>
+									S
+								</sup>
+							</span>
+						</Logo>
+						<Button onClick={handleCloseSidebar}>
+							<img src={menuImg} />
+						</Button>
+					</div>
+					<SearchBar />
 				</SidebarHeader>
 				
 				<ResultList>
