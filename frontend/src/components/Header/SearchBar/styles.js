@@ -27,6 +27,7 @@ export const Container = styled.div`
 
 export const ResultList = styled.ul`
 	width: 100%;
+	right: 0;
 	background: #fff;
 	position: absolute;
 	top: 100%;
