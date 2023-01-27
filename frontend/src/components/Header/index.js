@@ -1,6 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 
-import { Container } from './styles';
+import { 
+	Container,
+	Logo,
+	SearchContainer,
+	HeaderActions,
+	DashboardLink
+ } from './styles';
 import { AuthButton } from '../Auth/Button'
 import { Sidebar } from './Sidebar/'
 import { SearchBar } from './SearchBar'
@@ -34,25 +40,25 @@ export function Header({ isSearchBarOnFocus, handleSearchBarFocus }) {
 			</button>
 			
 
-			<div className="title">
-				{ windowWidth > 800 ? <h1>Link Start</h1> : ''}
+			<Logo>
+				{ windowWidth > 800 && <h1>Link Start</h1> }
 				<span>
-					<span className="logo">L<sup className="logo-sup">S</sup></span> { windowWidth > 800 ? 'Commerce' : '' }
+					<span>L<sup>S</sup></span> { windowWidth > 800 ? 'Commerce' : '' }
 				</span>
-			</div>
+			</Logo>
 
 			
-			<div className="search-engine-container">
+			<SearchContainer>
 				<SearchBar isSearchBarOnFocus={isSearchBarOnFocus} handleSearchBarFocus={handleSearchBarFocus}/>
-			</div>
+			</SearchContainer>
 
-			<div className="header-actions">
+			{windowWidth > 800 && <HeaderActions>
 				<AuthButton />
-				{ isRootAuthenticated && <a href="" className="dashboard-link">
+				{ isRootAuthenticated && <DashboardLink>
 					<img src={dashboardIconImg} /> 
 					Dashboard
-				</a> }
-			</div>
+				</DashboardLink> }
+			</HeaderActions>}
 			
 			{windowWidth >= 1023 && (
 				<DropdownMenu />

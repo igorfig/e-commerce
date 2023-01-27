@@ -1,5 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
-import { ListContainer } from './styles.js'
+import { 
+	Container, 
+	Link, 
+	DropdownContent,
+	ListItem,
+	Sidebar
+} from './styles.js'
 
 import dropdownImg from '../../../assets/dropdown.svg'
 import rightArrowImg from '../../../assets/rightArrow.svg'
@@ -53,66 +59,46 @@ export function DropdownMenu() {
 	}
 
 	return (
-		<ListContainer>
-					<li onMouseOver={handleToggleDropdownMenu} onMouseOut={handleToggleDropdownMenu}  ref={ulRef}>
-						<a href="#">POR CATEGORIA</a>
-						<img src={dropdownImg} alt="Abrir dropdown menu"/>
-						{isDropdownMenuActive && (
-							<>
-								<ul className="dropdown">
-									{new Array(6).fill(0).map((i, index) => {
-										const categories = ['Hardware', 'Periféricos', 'Computadores', 'Smartphones', 'Games', 'Espaço Gamer']
-										const idCategories = ['hardware', 'peripherals', 'computers', 'smartphone', 'games', 'gameStation']
+		<Container>
+			<Link href="#" onMouseOver={handleToggleDropdownMenu} onMouseOut={handleToggleDropdownMenu}  ref={ulRef}>
+				POR CATEGORIA
+				<img src={dropdownImg} alt="Abrir dropdown menu"/>
+				{isDropdownMenuActive && (
+					<>
+						<DropdownContent>
+							{new Array(6).fill(0).map((i, index) => {
+								const categories = ['Hardware', 'Periféricos', 'Computadores', 'Smartphones', 'Games', 'Espaço Gamer']
+								const idCategories = ['hardware', 'peripherals', 'computers', 'smartphone', 'games', 'gameStation']
 
-										return (
-											<li key={index} onMouseOver={(e) => {
-												handleOpenSidebarMenu(); 
-												handleGetCategoryId(e)
-											}} id={idCategories[index]}>
-												<span>
-													{categories[index]}
-													<img src={rightArrowImg} />
-												</span>
-											</li>
-										)
-									})}
-								</ul>
+								return (
+									<ListItem key={index} onMouseOver={(e) => {
+										handleOpenSidebarMenu(); 
+										handleGetCategoryId(e)
+									}} id={idCategories[index]}>
+										{categories[index]}
+										<img src={rightArrowImg} />
+									</ListItem>
+								)
+							})}
+						</DropdownContent>
 
-								{ isSidebarMenuActive && ( <ul className="sidebar" onMouseOver={handleOpenSidebarMenu}>
-									{productsCategories[productCategoryId].map((product, index) => (
-										<li key={index}>
-											<a href="#">
-												{product}
-											</a>
-										</li>	
-									))}
-								</ul>)}
-							</>
-						)}
-					</li>
-
-					<li>
-						<a href="#">DESTAQUES</a>
-					</li>
-
-					<li>
-						<a href="#">MAIS VENDIDOS</a>
-					</li>
-
-					<li>
-						<a href="#">MAIS PROCURADOS</a>
-					</li>
-
-
-					<li>
-						<a href="#">PC GAMER</a>
-					</li>
-
-
-					<li>
-						<a href="#">SMARTPHONES</a>
-					</li>
-
-				</ListContainer>
+						{ isSidebarMenuActive && ( <Sidebar onMouseOver={handleOpenSidebarMenu}>
+							{productsCategories[productCategoryId].map((product, index) => (
+								<ListItem key={index}>
+									<a href="#">
+										{product}
+									</a>
+								</ListItem>	
+							))}
+						</Sidebar>)}
+					</>
+				)}
+			</Link>
+			<Link href="#">DESTAQUES</Link>
+			<Link href="#">MAIS VENDIDOS</Link>
+			<Link href="#">MAIS PROCURADOS</Link>
+			<Link href="#">PC GAMER</Link>
+			<Link href="#">SMARTPHONES</Link>
+		</Container>
 	)
 }

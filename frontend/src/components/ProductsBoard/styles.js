@@ -14,117 +14,76 @@ export const Container = styled.div`
 	}
 
 	border-radius: .5rem;
-	position: relative;
-	
-	div.products-list {
-		display: flex;
-		row-gap: 3rem;
-		align-items: center;
-			
-		max-width: 100%;
+	position: relative;	
+`
 
-		@media(max-width: 640px) {
-			max-width: 800px;
-		}
-		padding: 5rem 0;
-		margin: 0 2rem;
+export const SectionsSeparator = styled.div`
+	width: 100%;
+	background: var(--secondary-color);
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1rem;
 
-		@media(max-width: 640px) {
-			padding: 5rem 1rem;
-		}
-		overflow-x: hidden;
-		
-		div.card-carousel-container {
-			display: flex;
-			cursor: grab;
-			
-			&::-webkit-scrollbar {
-				display: none;
-			}
-		}
-		
-		button.arrow {
-			border: none;
-			outline: none;
-			background: transparent;
-
-			&:hover {
-				background: ${transparentize(.3, '#C4C4C4')};
-			}
-		}
+	strong  {
+		color: #fff;
+		font-weight: 700
 	}
+`
 
-	.horizontal-row {
-		&.teste {
-			position: relative;
-			top: 0;
-		}
-
-		width: 100%;
-		background: var(--secondary-color);
-		height: 50px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 0 1rem;
-
-		span, strong  {
-			color: #fff;
-			font-weight: 700
-		}
-	}
-
-	div.banners {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 1rem;
-		margin-bottom: 5rem;
-		img {
-			border-radius: .5rem;
-			background-size: cover;
-			width: 100%;
-			max-height: 250px;
-
-			@media(max-width: 480px) {
-				width: 100%;
-			}
-		}
-	}
-	
-
-	div.gamer-section {
-		border: 3px solid var(--secondary-color);
-		margin: 0 2rem;
-		padding: 1rem;
+export const BannersContainer = styled.div`
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	margin-bottom: 5rem;
+	img {
 		border-radius: .5rem;
+		background-size: cover;
+		width: 100%;
+		max-height: 250px;
 
 		@media(max-width: 480px) {
-			border: none;
-			padding: 0;
-		}
-		div.sub {
-			display: flex;
-			align-items: center;
-			justify-items: center;
-			flex-direction: column;
 			width: 100%;
-			img {
-				width: 200px;
-				margin-bottom: 3rem;
-			}
-			h2 {
-				text-align: center;
-				color: var(--secondary-color);
-				font-weight: 700;
-				font-size: 3.6rem;
-
-				@media(max-width: 480px) {
-					font-size: 2rem;
-				}
-				
-			}
 		}
+	}
+`
+
+export const GamerStation = styled.section`
+	border: 3px solid var(--secondary-color);
+	margin: 0 2rem;
+	padding: 1rem;
+	border-radius: .5rem;
+
+	@media(max-width: 480px) {
+		border: none;
+		padding: 0;
+	}
+	
+`
+
+export const GamerStationHeader = styled.div`
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	flex-direction: column;
+	width: 100%;
+	img {
+		width: 200px;
+		margin-bottom: 3rem;
+	}
+
+	h2 {
+		text-align: center;
+		color: var(--secondary-color);
+		font-weight: 700;
+		font-size: 3.6rem;
+
+		@media(max-width: 480px) {
+			font-size: 2rem;
+		}
+		
 	}
 `

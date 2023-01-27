@@ -1,4 +1,11 @@
-import { Container } from './styles.js';
+import { 
+	Container,
+	Title,
+	Link,
+	Description,
+	Emphasis,
+	Author
+} from './styles.js';
 
 import githubImg from '../../assets/github-mark.svg'
 import linkedinImg from '../../assets/linkedin-mark.svg'
@@ -7,28 +14,31 @@ import instagramImg from '../../assets/instagram-mark.svg'
 export function Footer() {
 	return (
 		<Container>
-			<h3>ME SIGA NAS REDES SOCIAIS</h3>
+			<Title>ME SIGA NAS REDES SOCIAIS</Title>
 			<div>
-				<a href="https://github.com/igorfig" target="_blank">
+				<Link href="https://github.com/igorfig" target="_blank">
 					<img src={githubImg} alt="Github"/>
-				</a>
+				</Link>
 
-				<a href="https://www.linkedin.com/in/igorfig/" target="_blank">
+				<Link href="https://www.linkedin.com/in/igorfig/" target="_blank">
 					<img src={linkedinImg} alt="linkedIn"/>
-				</a>
+				</Link>
 
-				<a href="https://www.instagram.com/igufs123/" target="_blank">
+				<Link href="https://www.instagram.com/igufs123/" target="_blank">
 					<img src={instagramImg} alt="Instagram"/>
-				</a>
+				</Link>
 			</div>
 
-			<p>
-				<strong>Link Start | Commerce</strong> é um projeto web que simula um e-commerce.
+			<Description>
+				<Emphasis>Link Start | Commerce</Emphasis> é um projeto web que simula um e-commerce.
 				É inspirado em grandes lojas do mercado que tem como venda principal produtos relacionados a computadores. 
 				Este projeto foi feito no intuito de servir como portfólio e comprovar experiência em determinadas tecnologias do mercado.
-			</p>
+			</Description>
 
-			<span>Projeto inteiramente desenvolvido por <strong>Igor Figueiredo ❤️</strong></span>
+			<Author>
+				Projeto inteiramente desenvolvido por
+				<Emphasis> Igor Figueiredo ❤️</Emphasis>
+			</Author>
 		</Container>
 	)
 }

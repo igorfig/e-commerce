@@ -1,6 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
-import { Container } from './styles.js'
-import { ProductsList } from '../ProductsList'
+import { 
+	Container,
+	SectionsSeparator,
+	BannersContainer,
+	GamerStation,
+	GamerStationHeader
+ } from './styles.js'
+import { StyledProductsList } from '../ProductsList'
 import { Card } from '../Card';
 import logoGamerImg from '../../assets/logoGamer.png'
 import rightArrowImg from '../../assets/rightArrow.svg'
@@ -18,38 +24,37 @@ export function ProductsBoard({ applyOpacity }) {
 
 	return (
 		<Container applyOpacity={applyOpacity}>
-			<span className="horizontal-row teste">
+			<SectionsSeparator>
 				<strong>DESTAQUES ★</strong>
-				<span></span>
-			</span>
+			</SectionsSeparator>
 			
-			<ProductsList />
+			<StyledProductsList />
 
-			<span className="horizontal-row">
+			<SectionsSeparator>
 				<strong>MAIS VENDIDOS</strong>
-			</span>
+			</SectionsSeparator>
 
-			<ProductsList />
-			<div className="banners">
+			<StyledProductsList />
+			<BannersContainer>
 				<img src="banner/banner_img.jpg" />
-			</div>
+			</BannersContainer>
 
-			<span className="horizontal-row">
+			<SectionsSeparator>
 				<strong>MAIS PROCURADOS</strong>
-			</span>
+			</SectionsSeparator>
 
-			<ProductsList />
+			<StyledProductsList />
 
-			<div className="gamer-section">	
-				<div className="sub">
+			<GamerStation>	
+				<GamerStationHeader>
 					<img src={logoGamerImg} alt="Logo Gamer"/> 
 					<h2>	
 						ESPAÇO GAMER
 					</h2>
-				</div>
+				</GamerStationHeader>
 
-				<ProductsList />
-			</div>
+				<StyledProductsList />
+			</GamerStation>
 		</Container>
 	)
 }

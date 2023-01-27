@@ -8,46 +8,47 @@ export const Container = styled.div`
 	align-items: center;
 	justify-content: flex-start;
 	flex-direction: column;
-	h3 {
-		font-weight: bold;
-		color: #fff;
-		font-size: 1.2rem;
-		margin-bottom: 1rem;
+`
+
+export const Title = styled.h3`
+	font-weight: bold;
+	color: #fff;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+`
+
+export const Link = styled.a`
+	color: #fff;
+
+	& + a {
+		margin-left: .5rem;
 	}
 
-	a {
-		color: #fff;
-		img {
-			width: 48px;
-			height: 48px;
-		}
-
-		& + a {
-			margin-left: .5rem;
-		}
+	img {
+		width: 48px;
+		height: 48px;
 	}
+`
 
-	p {
-		text-align: justify;
-		strong {
-			color: var(--secondary-color);
-			font-size: 1rem;
-		}
-		max-width: 50%;
-		margin-top: 1rem;
-		color: #fff;
-		font-size: 1rem;
-		font-weight: 300;
-	}
 
-	span {
-		font-size: 1.2rem;
-		margin-top: 1.5rem;
-		color: #fff;
-		font-weight: 400;
-		strong {
-			color: var(--secondary-color);
-			font-weight: 700;
-		}
-	}
+export const Description = styled.p`
+	text-align: justify;
+	max-width: 50%;
+	margin-top: 1rem;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 300;
+`
+
+export const Emphasis = styled.strong`
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+	font-weight: 700;
+`
+
+export const Author = styled.span`
+	font-size: 1.2rem;
+	margin-top: 1.5rem;
+	color: #fff;
+	font-weight: 400;
 `

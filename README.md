@@ -74,39 +74,39 @@
 <br>
 <br>
 
-<img src=".vscode/screenshots/screenshot1.jpg" />
+<img src=".github/screenshots/screenshot1.jpg" />
 <br>
 <br>
 <br>
 
-<img src=".vscode/screenshots/screenshot2.jpg" />
+<img src=".github/screenshots/screenshot2.jpg" />
 <br>
 <br>
 <br>
 
-<img src=".vscode/screenshots/screenshot3.jpg" />
+<img src=".github/screenshots/screenshot3.jpg" />
 <br>
 <br>
 <br>
 
-<img src=".vscode/screenshots/screenshot4.jpg" />
+<img src=".github/screenshots/screenshot4.jpg" />
 <br>
 <br>
 <br>
 
-<img src=".vscode/screenshots/screenshot5.jpg" />
+<img src=".github/screenshots/screenshot5.jpg" />
 <br>
 <br>
 <br>
 
-<img src=".vscode/screenshots/screenshot6.jpg" />
+<img src=".github/screenshots/screenshot6.jpg" />
 <br>
 <br>
 <br>
 
-<img src=".vscode/screenshots/screenshot7.jpg" />
+<img src=".github/screenshots/screenshot7.jpg" />
 <br>
 <br>
 <br>
 
-<img src=".vscode/screenshots/screenshot8.jpg" />
+<img src=".github/screenshots/screenshot8.jpg" />
