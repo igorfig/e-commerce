@@ -33,7 +33,7 @@ export const Link = styled.a`
 
 export const Description = styled.p`
 	text-align: justify;
-	max-width: 50%;
+	max-width: 80%;
 	margin-top: 1rem;
 	color: #fff;
 	font-size: 1rem;
