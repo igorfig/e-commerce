@@ -70,7 +70,7 @@
 <br>
 <br>
 
-<h2>Algumas imagens do projeto até o último commit feito:</h2>
+<h2>Algumas imagens do projeto até o último commit de build feito:</h2>
 <br>
 <br>
 
@@ -110,3 +110,8 @@
 <br>
 
 <img src=".github/screenshots/screenshot8.jpg" />
+<br>
+<br>
+<br>
+
+<img src=".github/screenshots/screenshot9.jpg" />
