@@ -93,4 +93,10 @@ export const SubmitLogin = styled.button`
 	img {
 		margin-right: .6rem;
 	}
+
+	transition: filter .3s;
+
+	&:hover {
+		filter: brightness(.9);
+	}
 `
