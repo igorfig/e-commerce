@@ -19,7 +19,7 @@
 
 <br>
 <br>
-## Atualizações
+## Principais Atualizações
 <br>
 
 26/01/2023 - Primeiro commit: 
@@ -31,6 +31,14 @@
 	* Backend Pré montado
 	<br>
 
+<br>
+
+28/01/2023:
+<br>
+	* Página /login adicionada com ouso do react-router-dom
+	<br>
+	* código de estilos refatorados 27/01/2023
+<br>
 
 ## Como será o projeto no final do desenvolvimento?
 <br>
