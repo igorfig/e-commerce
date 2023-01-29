@@ -5,6 +5,7 @@ export const Container = styled.header`
 	background: var(--primary-color);
 	display: flex;
 	align-items: center;
+
 	padding: 1.25rem 0 3rem;
 	@media(max-width: 480px) {
 		padding: .75rem 0 .5rem;
@@ -28,7 +29,7 @@ export const Container = styled.header`
 	}
 `
 
-export const Logo = styled.div`
+export const LogoLink = styled.a`
 	margin: 0 1.75rem 0 2.75rem;
 	@media(max-width: 480px) {
 		margin: 0 1.75rem;
@@ -58,6 +59,8 @@ export const Logo = styled.div`
 export const HeaderActions = styled.div`
 	display: flex;
 	align-items: center;
+	position: absolute;
+	right: ${( isLoginPage ) => isLoginPage ? '10rem' : 0};
 `
 
 export const DashboardLink = styled.a`

@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 
+import { useLocation } from 'react-router-dom';
+
 import { 
 	Container,
-	Logo,
+	LogoLink,
 	SearchContainer,
 	HeaderActions,
 	DashboardLink
@@ -23,6 +25,8 @@ export function Header({ isSearchBarOnFocus, handleSearchBarFocus }) {
 	const [sidebar, setSidebar] = useState(false);
 	const [windowWidth, setWindowWith] = useState(window.innerWidth);
 
+	const location = useLocation();
+
 	const handleOpenSidebar = () => setSidebar(prevState => !prevState);
 	const getScreenSize = () => setWindowWith(window.innerWidth);
 	
@@ -40,19 +44,19 @@ export function Header({ isSearchBarOnFocus, handleSearchBarFocus }) {
 			</button>
 			
 
-			<Logo>
+			<LogoLink href="/">
 				{ windowWidth > 800 && <h1>Link Start</h1> }
 				<span>
 					<span>L<sup>S</sup></span> { windowWidth > 800 ? 'Commerce' : '' }
 				</span>
-			</Logo>
+			</LogoLink>
 
 			
-			<SearchContainer>
+			{location.pathname !== '/login' && <SearchContainer>
 				<SearchBar isSearchBarOnFocus={isSearchBarOnFocus} handleSearchBarFocus={handleSearchBarFocus}/>
-			</SearchContainer>
+			</SearchContainer>}
 
-			{windowWidth > 800 && <HeaderActions>
+			{windowWidth > 800 && <HeaderActions isLoginPage={location.pathname === '/login' ? true : false}>
 				<AuthButton />
 				{ isRootAuthenticated && <DashboardLink>
 					<img src={dashboardIconImg} /> 

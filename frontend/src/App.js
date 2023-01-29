@@ -1,5 +1,12 @@
 import { useState } from 'react';
 
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
 import { GlobalStyles } from './global';
 import { api } from './services/api';
 
@@ -38,9 +45,13 @@ function App() {
   return (
     <>
       <GlobalStyles backgroundColor={backgroundColor}/>
-      <Header isSearchBarOnFocus={isSearchBarOnFocus} handleSearchBarFocus={handleSearchBarFocus}/>
-      {/* <Home handleChangeBackgroundColor={handleChangeBackgroundColor} isSearchBarOnFocus={isSearchBarOnFocus} banners={banners}/> */}
-      <Login />
+       <Router>
+        <Header isSearchBarOnFocus={isSearchBarOnFocus} handleSearchBarFocus={handleSearchBarFocus}/>
+        <Routes> 
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/" element={<Home handleChangeBackgroundColor={handleChangeBackgroundColor} isSearchBarOnFocus={isSearchBarOnFocus} banners={banners}/>} />
+        </Routes>
+      </Router> 
       <Footer /> 
     </>
   );

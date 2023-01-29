@@ -4,7 +4,7 @@ import userImg from '../../../assets/user.svg'
 
 export function AuthButton() {
 	return (
-		<Link href="#">
+		<Link href="/login">
 			<img src={userImg} />
 			<ButtonContent>
 				<small>Minha conta</small>
