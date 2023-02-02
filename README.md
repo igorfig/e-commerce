@@ -133,10 +133,10 @@
 <br>
 <br>
 
-<img src=".github/screenshots/screenshot10.jpg" />
+<img src=".github/screenshots/screenshot-10.jpg" />
 <br>
 <br>
 <br>
 
-<img src=".github/screenshots/screenshot11.jpg" />
+<img src=".github/screenshots/screenshot-11.jpg" />
 
