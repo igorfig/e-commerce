@@ -40,6 +40,11 @@
 	* código de estilos refatorados 27/01/2023
 <br>
 
+02/02/2023:
+<br>
+	* Página /carrinho adicionada, estilizada e responsiva.
+<br>
+
 ## Como será o projeto no final do desenvolvimento?
 <br>
 <p>
@@ -123,3 +128,14 @@
 <br>
 
 <img src=".github/screenshots/screenshot9.jpg" />
+<br>
+<br>
+<br>
+
+<img src=".github/screenshots/screenshot10.jpg" />
+<br>
+<br>
+<br>
+
+<img src=".github/screenshots/screenshot11.jpg" />
+
