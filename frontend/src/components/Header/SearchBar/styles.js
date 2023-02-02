@@ -4,7 +4,7 @@ import { transparentize, darken } from 'polished';
 export const Container = styled.div`
 	display: flex;
 	align-items: center;
-	background: #fff;
+	background: var(--white);
 	border-radius: .25rem;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	position: relative;
@@ -19,7 +19,7 @@ export const Container = styled.div`
 		outline: none;
 		font-size: 1rem;
 		&::placeholder {
-			color:#C4C4C4;
+			color: var(--gray-soft);
 			font-size: 1rem;
 		}
 	}
@@ -28,7 +28,7 @@ export const Container = styled.div`
 export const ResultList = styled.ul`
 	width: 100%;
 	right: 0;
-	background: #fff;
+	background: var(--white);
 	position: absolute;
 	top: 100%;
 	z-index: 999;
@@ -44,7 +44,7 @@ export const Result = styled.li`
 	padding: .5rem 1rem;
 	display: flex;
 	align-items: center;
-	background: #fff;
+	background: var(--white);
 	transition: filter .2s;
 	cursor: pointer;
 	display: flex;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { transparentize } from 'polished';
 
 export const Container = styled.div`
-	background: #FAFAFB;
+	background: var(--white-100);
 	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 	margin: 0 2rem 2rem;
 	padding-bottom: 1rem;
@@ -27,7 +27,7 @@ export const SectionsSeparator = styled.div`
 	padding: 0 1rem;
 
 	strong  {
-		color: #fff;
+		color: var(--white);
 		font-weight: 700
 	}
 `

@@ -9,7 +9,7 @@ export const Link = styled.a`
 
 export const ButtonContent = styled.span`
 	margin-left: 5%;
-	color: #fff;
+	color: var(--white);
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;

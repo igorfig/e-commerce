@@ -12,7 +12,7 @@ export const Link = styled.a`
 	align-items: center;
 	justify-content: flex-start;
 	padding: 0 .5rem;
-	color: #fff;
+	color: var(--white);
 	background: var(--cta-color);
 	transition: filter .2s ease-in;
 
@@ -22,7 +22,7 @@ export const Link = styled.a`
 `
 
 export const CartButtonContent = styled.div`
-	color: #fff;
+	color: var(--white);
 	margin-left: 5%;
 	padding: 0;
 	display: flex;

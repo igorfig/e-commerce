@@ -12,13 +12,13 @@ export const Container = styled.div`
 
 export const Title = styled.h3`
 	font-weight: bold;
-	color: #fff;
+	color: var(--white);
 	font-size: 1.2rem;
 	margin-bottom: 1rem;
 `
 
 export const Link = styled.a`
-	color: #fff;
+	color: var(--white);
 
 	& + a {
 		margin-left: .5rem;
@@ -35,7 +35,7 @@ export const Description = styled.p`
 	text-align: justify;
 	max-width: 80%;
 	margin-top: 1rem;
-	color: #fff;
+	color: var(--white);
 	font-size: 1rem;
 	font-weight: 300;
 `
@@ -49,6 +49,6 @@ export const Emphasis = styled.strong`
 export const Author = styled.span`
 	font-size: 1.2rem;
 	margin-top: 1.5rem;
-	color: #fff;
+	color: var(--white);
 	font-weight: 400;
 `

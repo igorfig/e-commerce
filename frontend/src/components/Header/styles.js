@@ -26,6 +26,10 @@ export const Container = styled.header`
 		outline: none;
 		border: none;
 		margin-left: 1.6rem;
+
+		img.menu-on {
+			transform: rotate(180deg);
+		}
 	}
 `
 
@@ -39,7 +43,7 @@ export const LogoLink = styled.a`
 	align-items: center;
 	h1 {
 		font-size: 1rem;
-		color: #fff;
+		color: var(--white);
 		font-weight: 300;
 		font-style: italic;
 		align-self: flex-end;
@@ -68,9 +72,9 @@ export const DashboardLink = styled.a`
 	align-items: center;
 	height: 50px;
 	padding: 0 .5rem;
-	border: 2px solid #fff;
+	border: 2px solid var(--white);
 	border-radius: .25rem;
-	color: #fff;
+	color: var(--white);
 	font-weight: 400;
 	font-size: 1.2rem;
 	img {

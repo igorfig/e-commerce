@@ -7,9 +7,9 @@ import {
 	Author
 } from './styles.js';
 
-import githubImg from '../../assets/github-mark.svg'
-import linkedinImg from '../../assets/linkedin-mark.svg'
-import instagramImg from '../../assets/instagram-mark.svg'
+import githubImg from '../../assets/socialMedia/github-mark.svg'
+import linkedinImg from '../../assets/socialMedia/linkedin-mark.svg'
+import instagramImg from '../../assets/socialMedia/instagram-mark.svg'
 
 export function Footer() {
 	return (

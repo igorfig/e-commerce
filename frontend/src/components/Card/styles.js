@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 export const Container = styled.div`
-	background: #fff;
+	background: var(--white);
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	padding: 1rem;
 	max-width: 250px;
@@ -58,7 +58,7 @@ export const ProductPrice = styled.div`
 	justify-content: center;
 	small {
 		text-decoration: line-through;
-		color: #c4c4c4;
+		color: var(--gray-soft);
 	}
 
 	strong {
@@ -68,7 +68,7 @@ export const ProductPrice = styled.div`
 	}
 
 	span {
-		color: #c4c4c4;
+		color: var(--gray-soft);
 	}
 
 	
@@ -82,7 +82,7 @@ export const CartButton = styled.button`
 	background: var(--cta-color);
 	border: none;
 	outline: none;
-	color: #fff;
+	color: var(--white);
 	padding: .4rem;
 	border-radius: .25rem;
 	transtion: filter .2s ease-in;

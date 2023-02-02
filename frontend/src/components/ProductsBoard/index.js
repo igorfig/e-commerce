@@ -8,8 +8,8 @@ import {
  } from './styles.js'
 import { StyledProductsList } from '../ProductsList'
 import { Card } from '../Card';
-import logoGamerImg from '../../assets/logoGamer.png'
-import rightArrowImg from '../../assets/rightArrow.svg'
+import logoGamerImg from '../../assets/layout/logoGamer.png'
+import rightArrowImg from '../../assets/label/arrow.svg'
 
 export function ProductsBoard({ applyOpacity }) {
 	

@@ -7,8 +7,8 @@ import {
 	Sidebar
 } from './styles.js'
 
-import dropdownImg from '../../../assets/dropdown.svg'
-import rightArrowImg from '../../../assets/rightArrow.svg'
+import dropdownImg from '../../../assets/label/down-arrow.svg'
+import rightArrowImg from '../../../assets/label/arrow.svg'
 
 export function DropdownMenu() {
 	const [isDropdownMenuActive, setIsDropDownMenuActive] = useState(false);

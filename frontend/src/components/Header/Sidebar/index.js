@@ -13,12 +13,12 @@ import {
 	Actions
  } from './styles';
 import { SearchBar } from '../SearchBar/'
-import { AuthButton } from '../../Auth/Button/'
-import { CartButton } from '../../Cart/Button/'
+import { AuthButton } from '../../Buttons/AuthButton'
+import { CartButton } from '../../Buttons/CartButton'
 
-import menuImg from '../../../assets/menuOff.svg'
-import userImg from '../../../assets/user.svg'
-import cartImg from '../../../assets/cart.svg'
+import menuImg from '../../../assets/label/menu.svg'
+import userImg from '../../../assets/label/user.svg'
+import cartImg from '../../../assets/label/cart.svg'
 
 export function Sidebar({ isActive }) {
 	const [products, setProducts] = useState([]);

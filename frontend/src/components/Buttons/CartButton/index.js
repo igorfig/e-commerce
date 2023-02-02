@@ -1,10 +1,10 @@
 import { Container, Link, CartButtonContent } from './styles.js'
 
-import cartImg from '../../../assets/cart.svg'
+import cartImg from '../../../assets/label/cart.svg'
 
 export function CartButton() {
 	return (
-		<Link href="#">
+		<Link href="/carrinho">
 			<img src={cartImg} alt="Carrinho de Compras"/>
 			<CartButtonContent>
 				<small>Carrinho</small>

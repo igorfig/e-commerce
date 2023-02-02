@@ -20,7 +20,7 @@ export const Link = styled.a`
 	align-items: center;
 	padding: 0 2rem;
 	position: relative;
-	color: #fff;
+	color: var(--white);
 	font-size: .8rem;
 	@media(max-width: 1024px) {
 		font-size: .7rem;
@@ -28,7 +28,7 @@ export const Link = styled.a`
 	font-weight: 900;
 
 	&:not(:last-child):not(:first-child) {
-		border-right: 1px solid #fff;
+		border-right: 1px solid var(--white);
 	}
 
 	&:first-child {
@@ -42,7 +42,7 @@ export const DropdownContent = styled.ul`
 	top: 100%;
 	left: 0;
 	width: 100%;
-	background: #fff;
+	background: var(--white);
 	border-right: 2px solid ${lighten(.175, '#C4C4C4')};
 `
 
@@ -57,7 +57,7 @@ export const ListItem = styled.li`
 	font-size: 1rem;
 	font-weight: 400;
 	width: 100%;
-	background: #fff;
+	background: var(--white);
 	color: ${darken(.3, '#C4C4C4')};
 	transition: filter .2s;
 	&:hover {
@@ -75,7 +75,7 @@ export const Sidebar = styled.ul`
 	width: 100%;
 	left: 100%;
 	top: 100%;
-	background: #fff;
+	background: var(--white);
 
 	a {
 		color: ${darken(.3, '#C4C4C4')};

@@ -85,7 +85,7 @@ export const Result = styled.li`
 	height: 60px;
 	background: ${transparentize(.9, '#cccccc')};
 	padding: 0 .4rem;
-	color: #fff;
+	color: var(--white);
 
 	img {
 		margin-right: 5%;
@@ -99,7 +99,7 @@ export const ProductInfo = styled.div`
 	
 	a {
 		text-decoration: none;
-		color: #fff;
+		color: var(--white);
 		font-size: .7rem;
 	}
 

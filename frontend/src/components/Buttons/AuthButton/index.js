@@ -1,6 +1,6 @@
 import { Link, ButtonContent } from './styles.js'
 
-import userImg from '../../../assets/user.svg'
+import userImg from '../../../assets/label/user.svg'
 
 export function AuthButton() {
 	return (

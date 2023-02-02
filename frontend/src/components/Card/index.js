@@ -8,8 +8,8 @@ import {
 	ProductPrice,
 	CartButton
 } from './styles'
-import cartImg from '../../assets/cart.svg'
-import starImg from '../../assets/star.svg'
+import cartImg from '../../assets/label/cart.svg'
+import starImg from '../../assets/layout/star.svg'
 
 export function Card() {
 	const arr = [1,2,3,4,5]

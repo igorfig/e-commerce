@@ -5,7 +5,7 @@ import {
 	Result,
 	ProductInfo,
  } from './styles.js'
-import magnifierImg from '../../../assets/magnifier.svg'
+import magnifierImg from '../../../assets/label/magnifier.svg'
 
 export function SearchBar({ isSearchBarOnFocus = false, handleSearchBarFocus = () => {}}) {
 	return (

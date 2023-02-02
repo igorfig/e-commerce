@@ -5,6 +5,14 @@ export const GlobalStyles = createGlobalStyle`
     --primary-color: #181D31;
     --secondary-color: #ff8b2b;
     --cta-color: #FF6500;
+    --white: #fff;
+    --white-100: #FAFAFB;
+    --gray-100: #eee;
+    --gray-soft: #C4C4C4;
+    --dark-gray: #565C69;
+    --font-color: #454545;
+    --font-bold: #2b2b2b;
+    --red: #E72626;
     --banner: ${({ backgroundColor }) => backgroundColor};
   }
   

@@ -9,16 +9,16 @@ import {
 	HeaderActions,
 	DashboardLink
  } from './styles';
-import { AuthButton } from '../Auth/Button'
+import { AuthButton } from '../Buttons/AuthButton'
 import { Sidebar } from './Sidebar/'
 import { SearchBar } from './SearchBar'
 import { DropdownMenu } from './DropdownMenu'
 
-import menuImg from '../../assets/menuOn.svg'
-import magnifierImg from '../../assets/magnifier.svg'
-import userImg from '../../assets/user.svg';
-import cartImg from '../../assets/cart.svg';
-import dashboardIconImg from '../../assets/dashboard-icon.svg';
+import menuImg from '../../assets/label/menu.svg'
+import magnifierImg from '../../assets/label/magnifier.svg'
+import userImg from '../../assets/label/user.svg';
+import cartImg from '../../assets/label/cart.svg';
+import dashboardIconImg from '../../assets/label/dashboard-icon.svg';
 
 export function Header({ isSearchBarOnFocus, handleSearchBarFocus }) {
 	const [isRootAuthenticated , setIsRootAuthenticated] = useState(false);
