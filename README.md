@@ -39,12 +39,13 @@
 	<br>
 	* código de estilos refatorados 27/01/2023
 <br>
+<br>
 
 02/02/2023:
 <br>
 	* Página /carrinho adicionada, estilizada e responsiva.
 <br>
-
+<br>
 ## Como será o projeto no final do desenvolvimento?
 <br>
 <p>
