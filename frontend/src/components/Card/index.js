@@ -13,6 +13,9 @@ import starImg from '../../assets/layout/star.svg'
 
 export function Card() {
 	const arr = [1,2,3,4,5]
+	const url = 'PROCESSADOR AMD RYZEN 5 5500, 6-CORE, 12-THREADS, 3.6GHZ (4.2GHZ TURBO), CACHE 19MB, AM4, 100-100000457BOX'.toLowerCase();
+	const urlFormatted = url.replace(/[ ,]+/g, "-")
+
 	return (
 		<Container>
 			<ProductInfo>
@@ -31,7 +34,7 @@ export function Card() {
 
 			<ProductSpecifications onMouseDown={(e) => e.preventDefault()}> 
 				<img src="images/proc-ryz-5.jpg"/>
-				<ProductDescription href="#">Processador AMD Ryzen 5 5600X, 3.7GHz (4.6GHz Max Turbo), Cache 35M...</ProductDescription>
+				<ProductDescription href={`/${urlFormatted}`}>Processador AMD Ryzen 5 5600X, 3.7GHz (4.6GHz Max Turbo), Cache 35M...</ProductDescription>
 			</ProductSpecifications>
 
 			<ProductPrice>

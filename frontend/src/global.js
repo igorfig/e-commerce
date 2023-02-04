@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     --font-color: #454545;
     --font-bold: #2b2b2b;
     --red: #E72626;
+    --green: #1F9050;
     --banner: ${({ backgroundColor }) => backgroundColor};
   }
   

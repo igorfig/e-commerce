@@ -10,13 +10,14 @@ import {
 import { GlobalStyles } from './global';
 import { api } from './services/api';
 
-import { Header } from './components/Header'
-import { Footer } from './components/Footer'
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 
-import { Home } from './pages/Home'
-import { Login } from './pages/Login'
-import { Cart } from './pages/Cart'
+import { Home } from './pages/Home';
+import { Login } from './pages/Login';
+import { Cart } from './pages/Cart';
+import { Product } from './pages/Product';
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('#0C448A');
@@ -43,6 +44,8 @@ function App() {
 
   const handleChangeBackgroundColor = (index) => setBackgroundColor(banners[index].backgroundColor)
 
+  const url = 'PROCESSADOR AMD RYZEN 5 5500, 6-CORE, 12-THREADS, 3.6GHZ (4.2GHZ TURBO), CACHE 19MB, AM4, 100-100000457BOX'.toLowerCase();
+  const urlFormatted = url.replace(/[ ,]+/g, "-")
 
   return (
     <>
@@ -53,6 +56,7 @@ function App() {
             <Route exact path="/" element={<Home handleChangeBackgroundColor={handleChangeBackgroundColor} isSearchBarOnFocus={isSearchBarOnFocus} banners={banners}/>} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/carrinho" element={<Cart />} />
+            <Route exact path={`/${urlFormatted}`} element={<Product />} />
         </Routes>
       </Router>
 
