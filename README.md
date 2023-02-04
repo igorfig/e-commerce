@@ -46,6 +46,14 @@
 	* Página /carrinho adicionada, estilizada e responsiva.
 <br>
 <br>
+
+03/02/2023:
+<br>
+	* Página /(nome do produto) adicionada, estilizada e responsiva.
+	Obs: URLs ainda não estão sendo tratadas corretamente (cada product name é uma rota)
+<br>
+<br>
+
 ## Como será o projeto no final do desenvolvimento?
 <br>
 <p>
@@ -133,10 +141,24 @@
 <br>
 <br>
 
-<img src=".github/screenshots/screenshot-10.jpg" />
+<img src=".github/screenshots/screenshot10.jpg" />
 <br>
 <br>
 <br>
 
-<img src=".github/screenshots/screenshot-11.jpg" />
+<img src=".github/screenshots/screenshot11.jpg" />
+
+<br>
+<br>
+<br>
+
+<img src=".github/screenshots/screenshot12.jpg" />
+
+
+<br>
+<br>
+<br>
+
+<img src=".github/screenshots/screenshot13.jpg" />
+
 
