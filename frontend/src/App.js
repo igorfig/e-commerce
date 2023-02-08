@@ -18,6 +18,7 @@ import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Cart } from './pages/Cart';
 import { Product } from './pages/Product';
+import { Dashboard } from './pages/Dashboard';
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('#0C448A');
@@ -57,6 +58,7 @@ function App() {
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/carrinho" element={<Cart />} />
             <Route exact path={`/${urlFormatted}`} element={<Product />} />
+            <Route exact path={'/dashboard'} element={<Dashboard />} />
         </Routes>
       </Router>
 
