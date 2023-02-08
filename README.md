@@ -53,6 +53,12 @@
 	Obs: URLs ainda não estão sendo tratadas corretamente (cada product name é uma rota)
 <br>
 <br>
+07/02/2023:
+<br>
+	* Página /dashboard adicionada com suas funções de alterar estoque e preço do produto adicionadas.
+	Obs: Rota ainda é pública e não está conectada ao database.
+<br>
+<br>
 
 ## Como será o projeto no final do desenvolvimento?
 <br>
@@ -154,11 +160,21 @@
 
 <img src=".github/screenshots/screenshot12.jpg" />
 
-
 <br>
 <br>
 <br>
 
 <img src=".github/screenshots/screenshot13.jpg" />
 
+<br>
+<br>
+<br>
+
+<img src=".github/screenshots/screenshot14.jpg" />
+
+<br>
+<br>
+<br>
+
+<img src=".github/screenshots/screenshot15.jpg" />
 
