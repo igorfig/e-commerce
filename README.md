@@ -60,6 +60,14 @@
 <br>
 <br>
 
+<br>
+
+13/02/2023:
+<br>
+	* Página /(categoria do produto) adicionada, estilizada e responsiva.
+	Obs: URLs ainda não estão sendo tratadas corretamente (cada category name é uma rota)
+<br>
+
 ## Como será o projeto no final do desenvolvimento?
 <br>
 <p>
@@ -177,4 +185,18 @@
 <br>
 
 <img src=".github/screenshots/screenshot15.jpg" />
+
+<br>
+<br>
+<br>
+
+<img src=".github/screenshots/screenshot16.jpg" />
+
+<br>
+<br>
+<br>
+
+<img src=".github/screenshots/screenshot17.jpg" />
+
+
 
