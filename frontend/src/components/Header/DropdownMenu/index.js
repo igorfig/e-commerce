@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { 
 	Container, 
-	Link, 
+	Link,
+	DropdownToggle, 
 	DropdownContent,
 	ListItem,
 	Sidebar
@@ -60,7 +61,7 @@ export function DropdownMenu() {
 
 	return (
 		<Container>
-			<Link href="#" onMouseOver={handleToggleDropdownMenu} onMouseOut={handleToggleDropdownMenu}  ref={ulRef}>
+			<DropdownToggle as="button" onMouseOver={handleToggleDropdownMenu} onMouseOut={handleToggleDropdownMenu}  ref={ulRef}>
 				POR CATEGORIA
 				<img src={dropdownImg} alt="Abrir dropdown menu"/>
 				{isDropdownMenuActive && (
@@ -85,7 +86,7 @@ export function DropdownMenu() {
 						{ isSidebarMenuActive && ( <Sidebar onMouseOver={handleOpenSidebarMenu}>
 							{productsCategories[productCategoryId].map((product, index) => (
 								<ListItem key={index}>
-									<a href="#">
+									<a href="/processadores">
 										{product}
 									</a>
 								</ListItem>	
@@ -93,7 +94,7 @@ export function DropdownMenu() {
 						</Sidebar>)}
 					</>
 				)}
-			</Link>
+			</DropdownToggle>
 			<Link href="#">DESTAQUES</Link>
 			<Link href="#">MAIS VENDIDOS</Link>
 			<Link href="#">MAIS PROCURADOS</Link>

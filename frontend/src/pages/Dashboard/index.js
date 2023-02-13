@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Container, DashboardTableContainer, ProductSectionSubtitle, ProductsLog, SelectProduct, ProductControlContainer, Button } from './styles';
 import { DashboardTable } from '../../components/DashboardTable';
-
 import { currencyFormatter } from '../../utils/currencyFormatter';
 
 export function Dashboard() {

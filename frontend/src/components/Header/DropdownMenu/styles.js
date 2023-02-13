@@ -26,7 +26,9 @@ export const Link = styled.a`
 		font-size: .7rem;
 	}
 	font-weight: 900;
+`
 
+export const DropdownToggle = styled(Link)`
 	&:not(:last-child):not(:first-child) {
 		border-right: 1px solid var(--white);
 	}

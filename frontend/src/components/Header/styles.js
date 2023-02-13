@@ -64,7 +64,13 @@ export const HeaderActions = styled.div`
 	display: flex;
 	align-items: center;
 	position: absolute;
-	right: ${( isLoginPage ) => isLoginPage ? '10rem' : 0};
+	@media(min-width: 1023px) {
+		right: ${({ isLoginPage }) => isLoginPage ? '10rem' : '5rem'};
+	}
+
+	@media(max-width: 800px) {
+		right: ${({ isLoginPage }) => isLoginPage ? '3rem' : '1rem'};
+	}
 `
 
 export const DashboardLink = styled.a`
@@ -86,6 +92,6 @@ export const SearchContainer = styled.div`
 	width: 50%;
 	margin-right: 1.6rem;
 	@media(max-width: 480px) {
-		width: 80%;
+		width: 50%;
 	}
 `
