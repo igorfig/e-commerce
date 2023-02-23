@@ -24,39 +24,39 @@
 
 26/01/2023 - Primeiro commit: 
 <br>
-	* Projeto no ínicio de desenvolvimento.
+	* Projeto no ínicio de desenvolvimento;
 	<br>
-	* Página Home criada
+	* Página Home criada;
 	<br>
-	* Backend Pré montado
+	* Backend Pré montado;
 	<br>
 
 <br>
 
 28/01/2023:
 <br>
-	* Página /login adicionada com ouso do react-router-dom
+	* Página /login adicionada com ouso do react-router-dom;
 	<br>
-	* código de estilos refatorados 27/01/2023
+	* código de estilos refatorados 27/01/2023;
 <br>
 <br>
 
 02/02/2023:
 <br>
-	* Página /carrinho adicionada, estilizada e responsiva.
+	* Página /carrinho adicionada, estilizada e responsiva;
 <br>
 <br>
 
 03/02/2023:
 <br>
-	* Página /(nome do produto) adicionada, estilizada e responsiva.
-	Obs: URLs ainda não estão sendo tratadas corretamente (cada product name é uma rota)
+	* Página /(nome do produto) adicionada, estilizada e responsiva;
+	Obs: URLs ainda não estão sendo tratadas corretamente (cada product name é uma rota);
 <br>
 <br>
 07/02/2023:
 <br>
-	* Página /dashboard adicionada com suas funções de alterar estoque e preço do produto adicionadas.
-	Obs: Rota ainda é pública e não está conectada ao database.
+	* Página /dashboard adicionada com suas funções de alterar estoque e preço do produto adicionadas;
+	Obs: Rota ainda é pública e não está conectada ao database;
 <br>
 <br>
 
@@ -64,9 +64,21 @@
 
 13/02/2023:
 <br>
-	* Página /(categoria do produto) adicionada, estilizada e responsiva.
-	Obs: URLs ainda não estão sendo tratadas corretamente (cada category name é uma rota)
+	* Página /(categoria do produto) adicionada, estilizada e responsiva;
+	Obs: URLs ainda não estão sendo tratadas corretamente (cada category name é uma rota);
 <br>
+
+23/02/2023:
+<br>
+	* API criada com todos os produtos que serão usados salvos no banco de dados PostgresSQL;
+	<br>
+	* API integrada atraves de custom hooks e providers. Utilizada na página Home ("/");
+	<br>
+	* Alguns estilos refatorados e adicionados;
+	<br>
+	* Algumas regras de négocio relacionadas ao consumo da API implementadas no front-end;
+<br>
+
 
 ## Como será o projeto no final do desenvolvimento?
 <br>
@@ -198,5 +210,10 @@
 
 <img src=".github/screenshots/screenshot17.jpg" />
 
+<br>
+<br>
+<br>
+
+<img src=".github/screenshots/screenshot18.png" />
 
 
