@@ -214,6 +214,6 @@
 <br>
 <br>
 
-<img src=".github/screenshots/screenshot18.jpg" />
+<img src=".github/screenshots/screenshot18.png" />
 
 
