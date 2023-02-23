@@ -3,11 +3,12 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Card } from '../Card';
 
-function ProductsList({ className }) {
+function ProductsList({ className, products }) {
 	const carouselRef = useRef(null);
 	const [width, setWidth] = useState(0);
+	
+	useEffect(() => setWidth(carouselRef.current?.scrollWidth - carouselRef.current?.offsetWidth),[products])
 
-	useEffect(() => setWidth(carouselRef.current?.scrollWidth - carouselRef.current?.offsetWidth),[])
 	return (
 		<motion.div className={className} whileTap={{cursor: "grabbing"}} ref={carouselRef}>
 			<motion.div 
@@ -15,13 +16,13 @@ function ProductsList({ className }) {
 				drag="x" 
 				dragConstraints={{
 					right: 0,
-					left: -width + 180
+					left: -width
 				}}
 				initial={{ x: 200}} 
 				animate= {{ x: 0 }}
 				transtion={{ duration: 0.8 }}
 				>
-				 {[1,2,3,4 ,5 ,6, 7, 8].map((item, index) => <Card key={Math.random()}/>)}
+				 {products.map((product) => <Card key={product.id} product={product}/>)}
 			</motion.div>
 		</motion.div>
 	)

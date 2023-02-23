@@ -20,7 +20,7 @@ export function Carousel({ banners, changeBackgroundColor, applyOpacity }) {
 			<ResponsiveCarousel showThumbs={false} showStatus={false} onChange={(index) => setIndex(index)} emulateTouch autoPlay infiniteLoop>
 				{banners.map((banner, index) => (
 					<div key={index}>
-						<img src={`banner/${banner.fileName}`} alt="Banner" />
+						<img src={`banner/${banner.fileName}`} alt="Banner" loading="lazy"/>
 					</div>
 				))}		
 			</ResponsiveCarousel>

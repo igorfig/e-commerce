@@ -3,6 +3,7 @@ import {
 	Container, 
 	Link,
 	DropdownToggle, 
+	DropdownContainer,
 	DropdownContent,
 	ListItem,
 	Sidebar
@@ -39,23 +40,19 @@ export function DropdownMenu() {
 		],
 
 		computers: [
-			'Computador', 'Computador', 'Computador', 'Computador', 'Computador'
+			'PC', 'Monitores'
 		],
 
 		peripherals: [
-			'peripherals', 'peripherals', 'peripherals', 'peripherals', 'peripherals', 'peripherals'
+			'Mouses', 'Teclados', 'Headsets'
 		],
 
 		smartphone: [
-			'peripherals', 'peripherals', 'peripherals', 'peripherals', 'peripherals', 'peripherals'
+			'Android', 'Apple'
 		],
 
 		games: [
-			'peripherals', 'peripherals', 'peripherals', 'peripherals', 'peripherals', 'peripherals'
-		],
-
-		gameStation: [
-			'peripherals', 'peripherals', 'peripherals', 'peripherals', 'peripherals', 'peripherals'
+			'Consoles', "Controles"
 		]
 	}
 
@@ -65,11 +62,11 @@ export function DropdownMenu() {
 				POR CATEGORIA
 				<img src={dropdownImg} alt="Abrir dropdown menu"/>
 				{isDropdownMenuActive && (
-					<>
+					<DropdownContainer>
 						<DropdownContent>
-							{new Array(6).fill(0).map((i, index) => {
-								const categories = ['Hardware', 'Periféricos', 'Computadores', 'Smartphones', 'Games', 'Espaço Gamer']
-								const idCategories = ['hardware', 'peripherals', 'computers', 'smartphone', 'games', 'gameStation']
+							{new Array(5).fill(0).map((i, index) => {
+								const categories = ['Hardware', 'Periféricos', 'Computadores', 'Smartphones', 'Área Gamer']
+								const idCategories = ['hardware', 'peripherals', 'computers', 'smartphone', 'games']
 
 								return (
 									<ListItem key={index} onMouseOver={(e) => {
@@ -92,7 +89,7 @@ export function DropdownMenu() {
 								</ListItem>	
 							))}
 						</Sidebar>)}
-					</>
+					</DropdownContainer>
 				)}
 			</DropdownToggle>
 			<Link href="#">DESTAQUES</Link>

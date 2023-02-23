@@ -17,7 +17,7 @@ export function SearchBar({ isSearchBarOnFocus = false, handleSearchBarFocus = (
 			{isSearchBarOnFocus && <ResultList>
 				{new Array(8).fill(0).map((i, index) => (
 					<Result key={index}>
-						<img src="images/vboard-rtx-4.jpg" />
+						<img src="images/vboard-rtx-4.jpg" loading="lazy"/>
 						<ProductInfo>
 							<span>Placa de Vídeo Galax GeForce RTX 4090 ST, 24GB GDDR6X, ARGB, DLSS, Ray Tracing</span>
 							<strong>R$ 14.999,99</strong>

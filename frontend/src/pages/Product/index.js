@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+import { api } from '../../services/api';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 import { 
@@ -22,9 +24,26 @@ import eloCardImg from '../../assets/creditCardFlags/elo.png';
 import cartImg from '../../assets/label/cart.svg';
 
 export function Product() {
+	const [dbProducts, setDbProducts] = useState([]);
+	const [entries, setEntries] = useState([]);
+
+	useEffect(() => {
+		(async () => {
+			try {
+				const apiResponse = await api.get('/products');
+				const data = apiResponse.data;
+
+				setDbProducts(data);
+				setEntries(Object.entries(data[0].specs));
+			} catch(err) {
+				console.error(err.message);
+			}
+		})()
+	}, [])
+
 	return (
 		<Container>
-			<h2>PROCESSADOR AMD RYZEN 5 5500, 6-CORE, 12-THREADS, 3.6GHZ (4.2GHZ TURBO), CACHE 19MB, AM4, 100-100000457BOX</h2>
+			<h2>{dbProducts[0]?.product}</h2>
 			<CurrentPath>
 				<a href="/">
 					 <svg
@@ -39,7 +58,7 @@ export function Product() {
 				</a>
 				<span>➛</span>
 			    <small>
-			    	PROCESSADOR AMD RYZEN 5 5500, 6-CORE, 12-THREADS, 3.6GHZ (4.2GHZ TURBO), CACHE 19MB, AM4, 100-100000457BOX
+			    	{dbProducts[0]?.product}
 			    </small>
 			</CurrentPath>
 
@@ -47,7 +66,7 @@ export function Product() {
 				<ProductInfo>
 					<Zoom>
 						<ProductImage 
-							src="images/proc-ryz-5.jpg" 
+							src={`products/${dbProducts[0]?.product_category}/${dbProducts[0]?.icon_reference}.png`} 
 							alt="Processador AMD Ryzen 5" />
 					</Zoom>
 					<ProductSpecSheet>
@@ -66,41 +85,14 @@ export function Product() {
 						    </svg>
 							FICHA TÉCNICA
 						</h2>
+						
 						<div>
 							<h3>Especificações Gerais:</h3>
-							<span>Plataforma: <strong>Boxed Processor</strong></span>
-
-							<span>Família de produto: <strong>AMD Ryzen™ Processors</strong></span>
-
-							<span>Linha de produto: <strong>AMD Ryzen™ 5 5000 G-Series Desktop Processors with Radeon™ Graphics</strong></span>
-
-							<span>Nº de núcleos de CPU: <strong>6</strong></span>
-
-							<span>Nº de threads: <strong>12</strong></span>
-
-							<span>Clock de Max Boost: <strong>Até 4.4GHz</strong></span>
-
-							<span>Clock básico: <strong>3.9GHz</strong></span>
-
-							<span>Total de Cache L2: <strong>3MB</strong></span>
-
-							<span>Cachê L3 total: <strong>16MB</strong></span>
+							{entries.map(([key, value]) => (
+								<span key={key}>{key.charAt(0).toUpperCase() + key.slice(1)}: <strong>{value}</strong></span>
+							))}
 						</div>
-	
-						<div>
-							<h3>Capacidades Gráficas:</h3>
-							<span>
-								Modelo gráfico: <strong>Radeon™ Graphics</strong>
-							</span>
-
-							<span>
-								Nº de núcleos de GPU: <strong>7</strong>
-							</span>
-
-							<span>
-								Frequência gráfica: <strong>1900 MHz</strong>
-							</span>
-						</div>
+						
 					</ProductSpecSheet>
 				</ProductInfo>
 

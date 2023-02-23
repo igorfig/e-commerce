@@ -17,15 +17,15 @@ export function Footer() {
 			<Title>ME SIGA NAS REDES SOCIAIS</Title>
 			<div>
 				<Link href="https://github.com/igorfig" target="_blank">
-					<img src={githubImg} alt="Github"/>
+					<img src={githubImg} alt="Github" loading="lazy"/>
 				</Link>
 
 				<Link href="https://www.linkedin.com/in/igorfig/" target="_blank">
-					<img src={linkedinImg} alt="linkedIn"/>
+					<img src={linkedinImg} alt="linkedIn" loading="lazy"/>
 				</Link>
 
 				<Link href="https://www.instagram.com/igufs123/" target="_blank">
-					<img src={instagramImg} alt="Instagram"/>
+					<img src={instagramImg} alt="Instagram" loading="lazy"/>
 				</Link>
 			</div>
 

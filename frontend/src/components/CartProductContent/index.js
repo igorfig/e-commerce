@@ -11,7 +11,7 @@ export function CartProductContent() {
 		<Container>
 				<ProductDetailsContainer>
 					<ProductDescription>
-						<img src="images/proc-ryz-5.jpg" alt="Imagem do Produto" />
+						<img src="images/proc-ryz-5.jpg" alt="Imagem do Produto" loading="lazy"/>
 						<div>
 							<span>Processador AMD Ryzen 5 5600X, 3.7GHz (4.6GHz Max Turbo), Cache 35M...</span>
 							<small>Parcelas em até 10x no cartão sem juros</small>

@@ -8,6 +8,7 @@ import {
 	SearchContainer,
 	HeaderActions,
 	DashboardLink,
+	CartLink
  } from './styles';
 import { AuthButton } from '../Buttons/AuthButton'
 import { Sidebar } from './Sidebar/'
@@ -45,9 +46,9 @@ export function Header({ isSearchBarOnFocus, handleSearchBarFocus }) {
 			
 
 			<LogoLink href="/">
-				{ windowWidth >= 640 && <h1>Link Start</h1> }
+				{ windowWidth >= 680 && <h1>Link Start</h1> }
 				<span>
-					<span>L<sup>S</sup></span> { windowWidth >= 640 ? 'Commerce' : '' }
+					<span>L<sup>S</sup></span> { windowWidth >= 680 ? 'Commerce' : '' }
 				</span>
 			</LogoLink>
 
@@ -56,17 +57,17 @@ export function Header({ isSearchBarOnFocus, handleSearchBarFocus }) {
 				<SearchBar isSearchBarOnFocus={isSearchBarOnFocus} handleSearchBarFocus={handleSearchBarFocus}/>
 			</SearchContainer>}
 
-			{<HeaderActions isLoginPage={location.pathname === '/login' ? true : false}>
-				{ windowWidth >= 640 && <AuthButton /> }
-				{ isRootAuthenticated && windowWidth >= 800 && <DashboardLink>
+			{windowWidth > 1200 && <HeaderActions isLoginPage={location.pathname === '/login' ? true : false}>
+				{ <AuthButton shot/> }
+				{ isRootAuthenticated && <DashboardLink>
 					<img src={dashboardIconImg} /> 
 					Dashboard
 				</DashboardLink> }
 
-				{ !isRootAuthenticated && windowWidth > 800 &&	
-					<a href="/carrinho">
+				{ !isRootAuthenticated &&	
+					<CartLink isCartEmpty={false} data-count={7} href="/carrinho">
 						<img src={cartImg} alt="Carrinho" />
-					</a>
+					</CartLink>
 				}
 			</HeaderActions>}
 			

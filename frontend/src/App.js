@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { GlobalStyles } from './global';
 import { api } from './services/api';
 import { AppRoutes } from './routes';
+import { ProductsProvider } from './providers/productsProvider';
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('#0C448A');
@@ -28,7 +29,9 @@ function App() {
   return (
     <>
       <GlobalStyles backgroundColor={backgroundColor}/>
-      <AppRoutes handleChangeBackgroundColor={handleChangeBackgroundColor} banners={banners}/>
+      <ProductsProvider>
+        <AppRoutes handleChangeBackgroundColor={handleChangeBackgroundColor} banners={banners}/>
+      </ProductsProvider>
     </>
   );
 }
