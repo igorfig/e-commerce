@@ -26,9 +26,65 @@ export const SectionsSeparator = styled.div`
 	align-items: center;
 	padding: 0 1rem;
 
+	h2 {
+		margin: 0 auto;
+		font-size: 1.25rem;
+		color: var(--white);
+		font-weight: 700;
+	}
+
 	strong  {
 		color: var(--white);
-		font-weight: 700
+		font-weight: 700;
+	}
+
+
+	button {
+		background: transparent;
+		border: none;
+		outline: none;
+		padding: 0;
+			svg {
+				transition: transform .3s;
+				transform: rotate(90deg);
+				path {
+					stroke: #fff;
+				}
+
+				&.arrow-up {
+					transform: rotate(-90deg);
+				}
+			}
+	}
+`
+
+export const AllProducts = styled.div`
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+	padding: 2rem;
+
+	animation: fade-in .3s 1 ease-in;
+	opacity: 1;
+	transition: all .3s ease-in-out;
+
+	${({ fadeOut }) => fadeOut && `
+		opacity: 0;
+		transform: translateX(5%);
+	`}
+
+	${({hidden}) => hidden && `
+		display: none;
+	`}
+
+	@keyframes fade-in {
+		0% {
+			opacity: 0;
+			transform: translateX(-5%);
+		}
+
+		100% {
+			opacity: 1;
+		}
 	}
 `
 

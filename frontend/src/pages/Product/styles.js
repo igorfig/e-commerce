@@ -56,6 +56,7 @@ export const ProductInfo = styled.div`
 	width: 100%;
 	align-self: flex-start;
 	margin-right: 2rem;
+	padding: 2rem;
 
 `
 
@@ -112,7 +113,6 @@ export const ProductSpecSheet = styled.div`
 export const ProductImage = styled.img`
 	max-width: 450px;
 	max-height: 450px;
-
 	@media(max-width: 640px) {
 		max-width: 300px;
 		max-height: 300px;

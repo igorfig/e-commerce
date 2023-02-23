@@ -95,3 +95,27 @@ export const SearchContainer = styled.div`
 		width: 50%;
 	}
 `
+
+export const CartLink = styled.a`
+	${({ isCartEmpty }) => !isCartEmpty &&  `&::before { 
+		content: attr(data-count);
+		background: var(--secondary-color);
+		font-size: .8rem;
+		color: var(--white);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 1rem;
+		min-height: .75rem;
+		position: absolute;
+		top: 0;
+		right: 0;
+		border-radius: 50%;
+	};
+
+	img {
+		width: 36px;
+		height: 36px;
+	}`
+	}
+`
