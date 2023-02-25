@@ -7,11 +7,10 @@ const router = Router();
 
 router.get('/products', ProductsController.index);
 router.get('/products/:id', ProductsController.show);
-router.patch('/products/:id', ProductsController.update);
+router.patch('/products/:id', ProductsController.productStockHandler);
 
 //dashboard
-router.post('/dashboard', ProductsController.store);
-router.delete('/dashboard/:id', ProductsController.delete);
+router.patch('/dashboard/:id', ProductsController.update)
 
 
 

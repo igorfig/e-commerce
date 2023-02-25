@@ -14,37 +14,31 @@ class ProductsController {
 
     response.json(product);
   }
-  
-  async store(request, response) {
-    const newProduct = request.body;
 
-    const product = await ProductsRepository.save(newProduct);
+  async productStockHandler(request, response) { // Product Amount update on get on cart
+      const { id } = request.params;
+      const { amount } = await ProductsRepository.findProductById(id);
+      const { userCartAction } = request.query;
+      const cartAmount = Number(request.query.cartAmount);
 
-    response.json(product);
+      if(cartAmount > 0) {
+        const stock = userCartAction === 'add' ? amount - cartAmount : amount + cartAmount;
+        const product = await ProductsRepository.updateProductStockAmount(stock, id);
+        response.sendStatus(200);
+      }
   }
 
-  async update(request, response) { // Product Amount update on get on cart
-    const { command } = request.query; // decrement = When the product get o ncart ,increment = When the product get off cart
-    const cartAmount = Number(request.query.cartAmount)
+
+  async update(request, response) {
     const { id } = request.params;
-    const { amount } = await ProductsRepository.findProductById(id);
+    const { productAmount, productPrice } = request.body;
 
-    const productAmount = command === 'decrement' ? amount - cartAmount : amount + cartAmount;
-
-    console.log(productAmount);
-      
-    const product = await ProductsRepository.updateProductAmount(productAmount, id);
-
-    response.sendStatus(200).json(product);
+    if(!(productAmount && productPrice)) {
+      return response.sendStatus(400);
+    }
     
-  }
-
-  async delete(request, response) {
-    const { id } = request.params;
-
-    await ProductsRepository.delete(id);
-
-    response.sendStatus(204);
+    const product = await ProductsRepository.updateProductValues(productAmount, productPrice, id);
+    response.sendStatus(200).json(product);
   }
 }
 
