@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
 	background: var(--white);
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	padding: 1rem;
-	max-width: 250px;
+	max-width: 300px;
 	border-radius: .25rem;
 	margin 1rem;
 	flex: none;
@@ -37,7 +38,6 @@ export const ProductSpecifications = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
 `
 
 export const ProductImageContainer = styled.div`
@@ -48,17 +48,6 @@ export const ProductImageContainer = styled.div`
 		max-width: 100%;
 
 	}
-`
-
-export const ProductDescription = styled.a`
-	text-decoration: none;
-	font-weight: 600;
-	color: #000;
-	user-select: none;
-	line-height: 1.2;
-	height: calc(1.2em * 3);
-	margin-top: 1rem;
-
 `
 
 export const ProductPrice = styled.div`

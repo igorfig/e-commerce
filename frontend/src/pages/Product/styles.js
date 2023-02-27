@@ -56,8 +56,7 @@ export const ProductInfo = styled.div`
 	width: 100%;
 	align-self: flex-start;
 	margin-right: 2rem;
-	padding: 2rem;
-
+	padding: 2rem 0; 
 `
 
 export const ProductSpecSheet = styled.div`
