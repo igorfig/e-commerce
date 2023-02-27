@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { api } from '../../services/api';
+import { useParams } from 'react-router-dom';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 import { 
@@ -22,28 +23,31 @@ import mcCardImg from '../../assets/creditCardFlags/mc.png';
 import aeCardImg from '../../assets/creditCardFlags/ae.png';
 import eloCardImg from '../../assets/creditCardFlags/elo.png';
 import cartImg from '../../assets/label/cart.svg';
+import { currencyFormatter } from '../../utils/currencyFormatter';
+import { useProducts } from '../../hooks/useProducts';
 
 export function Product() {
-	const [dbProducts, setDbProducts] = useState([]);
-	const [entries, setEntries] = useState([]);
+	const [product, setProduct] = useState({});
+	const params = useParams();
+	const products = useProducts();
+	const [productSpecs, setProductSpecs] = useState([]);
 
 	useEffect(() => {
-		(async () => {
-			try {
-				const apiResponse = await api.get('/products');
-				const data = apiResponse.data;
+		const hasProduct = products.filter(product => product.product.includes(params.product));
+		setProduct(...hasProduct);
+	}, [products, params.product]);
 
-				setDbProducts(data);
-				setEntries(Object.entries(data[0].specs));
-			} catch(err) {
-				console.error(err.message);
-			}
-		})()
-	}, [])
+	useEffect(() => {
+		const specs = product?.specs;
+		if(specs) {
+			const objEntries = Object.entries(specs);
+			setProductSpecs(objEntries);
+		}
+	}, [product])
 
 	return (
 		<Container>
-			<h2>{dbProducts[0]?.product}</h2>
+			<h2>{product?.product}</h2>
 			<CurrentPath>
 				<a href="/">
 					 <svg
@@ -58,7 +62,7 @@ export function Product() {
 				</a>
 				<span>➛</span>
 			    <small>
-			    	{dbProducts[0]?.product}
+			    	{product?.product}
 			    </small>
 			</CurrentPath>
 
@@ -66,8 +70,8 @@ export function Product() {
 				<ProductInfo>
 					<Zoom>
 						<ProductImage 
-							src={`products/${dbProducts[0]?.product_category}/${dbProducts[0]?.icon_reference}.png`} 
-							alt="Processador AMD Ryzen 5" />
+							src={`products/${product?.product_category}/${product?.icon_reference}.png`} 
+							alt={product?.product} />
 					</Zoom>
 					<ProductSpecSheet>
 						<h2>
@@ -88,7 +92,7 @@ export function Product() {
 						
 						<div>
 							<h3>Especificações Gerais:</h3>
-							{entries.map(([key, value]) => (
+							{productSpecs.map(([key, value]) => (
 								<span key={key}>{key.charAt(0).toUpperCase() + key.slice(1)}: <strong>{value}</strong></span>
 							))}
 						</div>
@@ -103,9 +107,9 @@ export function Product() {
 					</ProductDetails>
 
 					<ProductPrice>
-						<small>R$ 2.223,78</small>
-						<strong>R$ 1.329,99</strong>
-						<span>Em até 10x de <strong>R$ 156,46</strong> sem juros no cartão</span>
+						<small>{currencyFormatter(product?.price + ((product?.price * 30) / 100))}</small>
+						<strong>{currencyFormatter(product?.price)}</strong>
+						<span>Em até 10x de <strong>{currencyFormatter(product?.price / 10)}</strong> sem juros no cartão</span>
 
 						<h3>
 						 	<svg
@@ -123,16 +127,10 @@ export function Product() {
 							OPÇÕES DE PARCELAMENTO
 						</h3>
 						<InstallmentTable>
-							<span>1x com 10% de desconto - R$ 317,64</span>
-							<span>2x sem juros de R$ 176,46</span>
-							<span>3x sem juros de R$ 117,64</span>
-							<span>4x sem juros de R$ 88,23</span>
-							<span>5x sem juros de R$ 70,58</span>
-							<span>6x sem juros de R$ 58,82</span>
-							<span>7x sem juros de R$ 50,41</span>
-							<span>8x sem juros de R$ 44,11</span>
-							<span>9x sem juros de R$ 39,21</span>
-							<span>10x sem juros de R$ 35,29</span>
+							<span>1x com 10% de desconto - {currencyFormatter(product?.price - ((product?.price * 10) / 100))}</span>
+							{new Array(9).fill(0).map((_, pos) => (
+								<span key={pos}>{pos + 2}x sem juros de {currencyFormatter(product?.price / (pos + 2))}</span>
+							))}
 
 							<div>
 								<img src={visaCardImg} alt="Visa Card" />

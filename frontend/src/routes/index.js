@@ -17,11 +17,11 @@ import { Product } from '../pages/Product';
 import { Dashboard } from '../pages/Dashboard';
 import { ProductCategory } from '../pages/ProductCategory';
 
+import { useProducts } from '../hooks/useProducts';
+
 export function AppRoutes({ handleChangeBackgroundColor, banners }) {
 	const [isSearchBarOnFocus, setIsSearchBarOnFocus] = useState(false);
   const handleSearchBarFocus = (status) => setIsSearchBarOnFocus(status);
- 	const url = 'PROCESSADOR AMD RYZEN 5 5500, 6-CORE, 12-THREADS, 3.6GHZ (4.2GHZ TURBO), CACHE 19MB, AM4, 100-100000457BOX'.toLowerCase();
-  const urlFormatted = url.replace(/[ ,]+/g, "-")
 	return (
 		<Router>
 			<Header isSearchBarOnFocus={isSearchBarOnFocus} handleSearchBarFocus={handleSearchBarFocus}/>
@@ -29,7 +29,7 @@ export function AppRoutes({ handleChangeBackgroundColor, banners }) {
 				<Route exact path="/" element={<Home handleChangeBackgroundColor={handleChangeBackgroundColor} isSearchBarOnFocus={isSearchBarOnFocus} banners={banners}/>} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/carrinho" element={<Cart />} />
-        <Route exact path={`/${urlFormatted}`} element={<Product />} />
+        <Route path={`/:product`} element={<Product />} />
       	<Route exact path={`/dashboard`} element={<Dashboard />} />
       	<Route exact path={'/processadores'} element={<ProductCategory />} />
 			</Routes>

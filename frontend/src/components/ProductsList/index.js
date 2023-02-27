@@ -6,7 +6,6 @@ import { Card } from '../Card';
 function ProductsList({ className, products }) {
 	const carouselRef = useRef(null);
 	const [width, setWidth] = useState(0);
-	
 	useEffect(() => setWidth(carouselRef.current?.scrollWidth - carouselRef.current?.offsetWidth),[products])
 
 	return (

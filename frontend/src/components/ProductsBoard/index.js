@@ -40,7 +40,7 @@ export function ProductsBoard({ applyOpacity }) {
 				<h2>APROVEITE NOSSAS PROMOÇÕES</h2>
 				<button onClick={handleToggleAllProducts}>
 					<svg
-					  className={isAllProductsSectionHide && "arrow-up"}
+					  className={isAllProductsSectionHide ? "arrow-up" : ''}
 				      xmlns="http://www.w3.org/2000/svg"
 				      width="28"
 				      height="28"

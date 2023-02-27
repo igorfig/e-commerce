@@ -2,9 +2,11 @@ import { useState, useEffect, createContext } from 'react';
 import { api } from '../services/api';
 
 export const ProductsContext = createContext([]);
+const urlRegex = /[ ,]+/g;
 
 export function ProductsProvider({ children }) {
 	const [products, setProducts] = useState([]);
+	const [selectedProduct, setSelectedProduct] = useState({});
 
 	useEffect(() => {
 		(async () => {

@@ -1,3 +1,7 @@
+import { useEffect } from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
 import { 
 	Container, 
 	ProductInfo, 
@@ -5,19 +9,16 @@ import {
 	ProductRate,
 	ProductSpecifications,
 	ProductImageContainer,
-	ProductDescription,
 	ProductPrice,
 	CartButton
 } from './styles'
 import cartImg from '../../assets/label/cart.svg'
 import starImg from '../../assets/layout/star.svg'
 import { currencyFormatter } from '../../utils/currencyFormatter';
+import { useProducts } from '../../hooks/useProducts';
 
 export function Card({ product }) {
 	const arr = [1,2,3,4,5]
-	const url = 'PROCESSADOR AMD RYZEN 5 5500, 6-CORE, 12-THREADS, 3.6GHZ (4.2GHZ TURBO), CACHE 19MB, AM4, 100-100000457BOX'.toLowerCase();
-	const urlFormatted = url.replace(/[ ,]+/g, "-")
-
 	return (
 		<Container>
 			<ProductInfo>
@@ -38,7 +39,7 @@ export function Card({ product }) {
 				<ProductImageContainer>
 					<img src={`products/${product.product_category}/${product.icon_reference}.png`} loading="lazy"/>
 				</ProductImageContainer>
-				<ProductDescription href={`/${urlFormatted}`}>{product.product.length > 60 ? product.product.substr(0, 55) + "..." : product.product}</ProductDescription>
+				<ProductDescription to={`/${product.product}`} >{product.product.length > 60 ? product.product.substr(0, 55) + "..." : product.product}</ProductDescription>
 			</ProductSpecifications>
 
 			<ProductPrice>
@@ -54,3 +55,14 @@ export function Card({ product }) {
 		</Container>
 	)
 }
+
+
+export const ProductDescription = styled(Link)`
+	text-decoration: none;
+	font-weight: 600;
+	color: #000;
+	user-select: none
+	line-height: 1.2;
+	height: calc(1.2em * 3);
+	margin-top: 1rem;
+`
