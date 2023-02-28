@@ -5,7 +5,6 @@ export const Container = styled.div`
 	display: flex;
 	align-items: center;
 	background: var(--white);
-	border-radius: .25rem;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	position: relative;
 	padding: .5rem;
@@ -34,9 +33,9 @@ export const ResultList = styled.ul`
 	z-index: 999;
 
 	@media(max-width: 640px) {
-		top: calc(100% + .5rem);
 		width: 100vw;
-		right: -1.6rem;
+		right: -35%;
+		top: calc(100% + .6rem);
 	}
 `
 
@@ -59,7 +58,7 @@ export const Result = styled.li`
 
 	img {
 		width: 64px;
-		height: 64px;
+		margin-right: .25rem;
 	}
 `
 

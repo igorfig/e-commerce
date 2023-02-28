@@ -24,7 +24,7 @@ export const CurrentPath = styled.div`
 		font-weight: 500;
 	}
 
-	small {
+	a {
 		font-weight: 500;
 		font-size: .8rem;
 		@media(max-width: 640px) {
@@ -54,9 +54,72 @@ export const Title = styled.div`
 
 export const ProductsSection = styled.div`
 	max-width: 100%;
-	padding: 2rem;
+	display: flex;
 
-	display: grid;
+	flex-direction: column;
+	gap: 2rem;
+`
 
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+export const Product = styled.div`
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background: var(--white);
+	padding: 2rem 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	position: relative;
+
+	@media(max-width: 640px) {
+		flex-direction: column;
+	}
+
+	img {
+		width: 128px;
+		@media(max-width: 640px) {
+			width: 100%;
+		}
+		padding: .5rem;
+	}
+
+	button {
+		background: none;
+		outline: none;
+		border: none;
+		position: absolute;
+		bottom: 1.5rem;
+		right: 1.5rem;
+		img {
+			width: 48px;
+		}
+	}
+`
+
+export const Info = styled.div`
+	max-width: 60%;
+	display: flex;
+	flex-direction: column;
+
+	@media(max-width: 640px) {
+		max-width: 100%;
+		text-align: justify;
+		line-height: 1.35rem;
+	}
+
+	span {
+		font-weight: 700;
+		font-size: 1rem;
+		color: var(--font-color);
+		margin-bottom: 1rem;
+	}
+
+	small {
+		text-decoration: line-through;
+		color: var(--gray-soft);
+	}
+
+	strong {
+		font-weight: 700;
+		font-size: 1.4rem;
+		color: var(--secondary-color);
+	}
 `
