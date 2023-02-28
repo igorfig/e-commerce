@@ -70,7 +70,7 @@ export function Product() {
 				<ProductInfo>
 					<Zoom>
 						<ProductImage 
-							src={`products/${product?.product_category}/${product?.icon_reference}.png`} 
+							src={`/products/${product?.product_category}/${product?.icon_reference}.png`} 
 							alt={product?.product} />
 					</Zoom>
 					<ProductSpecSheet>

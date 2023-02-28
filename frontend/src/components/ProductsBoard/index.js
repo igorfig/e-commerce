@@ -18,10 +18,10 @@ export function ProductsBoard({ applyOpacity }) {
 	const [isAllProductsSectionHide, setIsAllProductsSectionHide] = useState(false);
 	const [hidden, setIsHidden] = useState(false);
 
-	const featuredProducts = products.filter(product => product.product_category === 'video-board' || product.product_category === 'processor' || product.product_category === 'computer');
+	const featuredProducts = products.filter(product => product.product_category === 'placa-de-video' || product.product_category === 'processadores' || product.product_category === 'computadores');
 	const bestsellingProducts = products.filter(product => product.product.includes('iPhone') || product.product.includes('Xbox Series') || product.product.includes('Playstation 5') ||product.product.includes('RTX'));
-	const mostSearchedProducts = products.filter(product => product.product_category === 'smartphone' || product.product_category === 'computer' || product.product.includes('Controle DualShock') || product.product.includes('Controle Xbox'))
-	const videoGameCategoryProducts = products.filter(product => product.product_category === 'game-accessory' || product.product_category === 'videogame');
+	const mostSearchedProducts = products.filter(product => product.product_category === 'smartphones' || product.product_category === 'computadores' || product.product.includes('Controle DualShock') || product.product.includes('Controle Xbox'))
+	const videoGameCategoryProducts = products.filter(product => product.product_category === 'controles' || product.product_category === 'consoles');
 	
 	const handleToggleAllProducts = () => setIsAllProductsSectionHide(prevState => !prevState);
 
@@ -63,13 +63,13 @@ export function ProductsBoard({ applyOpacity }) {
 					{products.map(product => <Card key={product.id} product={product}/>)}
 			</AllProducts>
 
-			<SectionsSeparator>
+			<SectionsSeparator id="featured">
 				<strong>DESTAQUES ★</strong>
 			</SectionsSeparator>
 			
 			<StyledProductsList products={featuredProducts}/>
 
-			<SectionsSeparator>
+			<SectionsSeparator id="bestselling">
 				<strong>MAIS VENDIDOS</strong>
 			</SectionsSeparator>
 
@@ -78,7 +78,7 @@ export function ProductsBoard({ applyOpacity }) {
 				<img src="banner/banner_img.jpg" loading="lazy"/>
 			</BannersContainer>
 
-			<SectionsSeparator>
+			<SectionsSeparator id="most-searched">
 				<strong>MAIS PROCURADOS</strong>
 			</SectionsSeparator>
 

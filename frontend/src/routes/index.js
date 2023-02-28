@@ -29,9 +29,9 @@ export function AppRoutes({ handleChangeBackgroundColor, banners }) {
 				<Route exact path="/" element={<Home handleChangeBackgroundColor={handleChangeBackgroundColor} isSearchBarOnFocus={isSearchBarOnFocus} banners={banners}/>} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/carrinho" element={<Cart />} />
-        <Route path={`/:product`} element={<Product />} />
+        <Route path={`/produto/:product`} element={<Product />} />
       	<Route exact path={`/dashboard`} element={<Dashboard />} />
-      	<Route exact path={'/processadores'} element={<ProductCategory />} />
+      	<Route exact path={`/:optionalPath?/:category`} element={<ProductCategory />} />
 			</Routes>
 			<Footer />
 		</Router>

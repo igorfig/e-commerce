@@ -39,7 +39,7 @@ export function Card({ product }) {
 				<ProductImageContainer>
 					<img src={`products/${product.product_category}/${product.icon_reference}.png`} loading="lazy"/>
 				</ProductImageContainer>
-				<ProductDescription to={`/${product.product}`} >{product.product.length > 60 ? product.product.substr(0, 55) + "..." : product.product}</ProductDescription>
+				<ProductDescription to={`/produto/${product.product}`} >{product.product.length > 60 ? product.product.substr(0, 55) + "..." : product.product}</ProductDescription>
 			</ProductSpecifications>
 
 			<ProductPrice>

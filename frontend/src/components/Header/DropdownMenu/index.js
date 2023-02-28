@@ -54,7 +54,15 @@ export function DropdownMenu() {
 		games: [
 			'Consoles', "Controles"
 		]
-	}
+	};
+
+	const routeParams = {
+		hardware: ['processadores', 'placa-de-video', 'memoria-ram', 'fontes', 'armazenamento'],
+		computers: ['computadores', 'monitores'],
+		peripherals: ['mouses', 'teclados', 'headset'],
+		smartphone: ['smartphone/android', 'smartphone/apple'],
+		games: ['consoles', 'controles']
+	};
 
 	return (
 		<Container>
@@ -64,7 +72,7 @@ export function DropdownMenu() {
 				{isDropdownMenuActive && (
 					<DropdownContainer>
 						<DropdownContent>
-							{new Array(5).fill(0).map((i, index) => {
+							{new Array(5).fill(0).map((_, index) => {
 								const categories = ['Hardware', 'Periféricos', 'Computadores', 'Smartphones', 'Área Gamer']
 								const idCategories = ['hardware', 'peripherals', 'computers', 'smartphone', 'games']
 
@@ -81,10 +89,10 @@ export function DropdownMenu() {
 						</DropdownContent>
 
 						{ isSidebarMenuActive && ( <Sidebar onMouseOver={handleOpenSidebarMenu}>
-							{productsCategories[productCategoryId].map((product, index) => (
+							{productsCategories[productCategoryId].map((category, index) => (
 								<ListItem key={index}>
-									<a href="/processadores">
-										{product}
+									<a href={`/${routeParams[productCategoryId][index]}`}>
+										{category}
 									</a>
 								</ListItem>	
 							))}
@@ -92,11 +100,11 @@ export function DropdownMenu() {
 					</DropdownContainer>
 				)}
 			</DropdownToggle>
-			<Link href="#">DESTAQUES</Link>
-			<Link href="#">MAIS VENDIDOS</Link>
-			<Link href="#">MAIS PROCURADOS</Link>
-			<Link href="#">PC GAMER</Link>
-			<Link href="#">SMARTPHONES</Link>
+			<Link href="/#featured">DESTAQUES</Link>
+			<Link href="/#bestselling">MAIS VENDIDOS</Link>
+			<Link href="/#most-searched">MAIS PROCURADOS</Link>
+			<Link href="/computadores">PC GAMER</Link>
+			<Link href="/smartphones">SMARTPHONES</Link>
 		</Container>
 	)
 }
