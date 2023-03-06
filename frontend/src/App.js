@@ -3,6 +3,7 @@ import { GlobalStyles } from './global';
 import { api } from './services/api';
 import { AppRoutes } from './routes';
 import { ProductsProvider } from './providers/productsProvider';
+import { CartProvider } from './providers/cartProvider';
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('#0C448A');
@@ -30,7 +31,9 @@ function App() {
     <>
       <GlobalStyles backgroundColor={backgroundColor}/>
       <ProductsProvider>
-        <AppRoutes handleChangeBackgroundColor={handleChangeBackgroundColor} banners={banners}/>
+        <CartProvider>
+          <AppRoutes handleChangeBackgroundColor={handleChangeBackgroundColor} banners={banners}/>
+        </CartProvider>
       </ProductsProvider>
     </>
   );

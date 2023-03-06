@@ -10,10 +10,11 @@ import {
 	DashboardLink,
 	CartLink
  } from './styles';
-import { AuthButton } from '../Buttons/AuthButton'
-import { Sidebar } from './Sidebar/'
-import { SearchBar } from './SearchBar'
-import { DropdownMenu } from './DropdownMenu'
+import { AuthButton } from '../Buttons/AuthButton';
+import { Sidebar } from './Sidebar/';
+import { SearchBar } from './SearchBar';
+import { DropdownMenu } from './DropdownMenu';
+import { useCart } from '../../hooks/useCart';
 
 import menuImg from '../../assets/label/menu.svg'
 import magnifierImg from '../../assets/label/magnifier.svg'
@@ -25,6 +26,7 @@ export function Header({ isSearchBarOnFocus, handleSearchBarFocus }) {
 	const [isRootAuthenticated , setIsRootAuthenticated] = useState(false);
 	const [sidebar, setSidebar] = useState(false);
 	const [windowWidth, setWindowWith] = useState(window.innerWidth);
+	const { cartProductsAmount } = useCart();
 
 	const location = useLocation();
 
@@ -65,7 +67,7 @@ export function Header({ isSearchBarOnFocus, handleSearchBarFocus }) {
 				</DashboardLink> }
 
 				{ !isRootAuthenticated &&	
-					<CartLink isCartEmpty={false} data-count={7} href="/carrinho">
+					<CartLink isCartEmpty={false} data-count={cartProductsAmount} href="/carrinho">
 						<img src={cartImg} alt="Carrinho" />
 					</CartLink>
 				}

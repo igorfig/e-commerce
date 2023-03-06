@@ -1,3 +1,6 @@
+import { useState, useEffect } from 'react';
+import Storage from '../../utils/storage.js';
+import { useCart } from '../../hooks/useCart';
 import { Container, EmptyCartContainer, Button, CartContent,  } from './styles';
 import { UserAddress } from '../../components/UserAddress';
 import { CartProduct } from '../../components/CartProduct';
@@ -6,9 +9,10 @@ import { CartResume } from '../../components/CartResume';
 import emptyCartImg from '../../assets/layout/emptyCart.svg';
 import cartImg from '../../assets/label/cart.svg';
 export function Cart() {
+	const { cartProducts } = useCart();
 	return(
 		<Container>
-			{false && <EmptyCartContainer>
+			{cartProducts.length === 0 && <EmptyCartContainer>
 				<strong>
 					O seu carrinho está vazio.	
 				</strong>
@@ -21,13 +25,13 @@ export function Cart() {
 				</Button>	
 			</EmptyCartContainer>}
 
-			<CartContent>
+			{cartProducts.length > 0 && <CartContent>
 				<div>
 					<UserAddress />
-					<CartProduct/>
+					<CartProduct products={cartProducts}/>
 				</div>	
 				<CartResume />
-			</CartContent>
+			</CartContent>}
 		</Container>
 	)
 };

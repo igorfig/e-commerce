@@ -1,9 +1,12 @@
+import { useRef } from 'react';
+import Storage from '../../utils/storage.js';
 import { Container, ProductHeader, ProductContainer } from './styles';
 import { CartProductContent } from '../CartProductContent';
-
+import { useCart } from '../../hooks/useCart';
 import shoppingBagImg from '../../assets/layout/shoppingBag.svg';
 
-export function CartProduct() {
+export function CartProduct({ products }) {
+	const { handleRemoveAllProducts } = useCart();
 	return (
 		<Container>
 			<ProductHeader>
@@ -12,7 +15,7 @@ export function CartProduct() {
 					PRODUTOS
 				</h2>	
 
-				<button>
+				<button onClick={handleRemoveAllProducts}>
 					<svg
 				      xmlns="http://www.w3.org/2000/svg"
 				      width="16"
@@ -32,8 +35,7 @@ export function CartProduct() {
 			</ProductHeader>
 
 			<ProductContainer>
-				<CartProductContent />
-				<CartProductContent />
+				{products && products.map((product) => <CartProductContent key={product.id} product={product}/>)}
 			</ProductContainer>
 		</Container>
 	)

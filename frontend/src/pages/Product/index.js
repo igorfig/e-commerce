@@ -25,12 +25,14 @@ import eloCardImg from '../../assets/creditCardFlags/elo.png';
 import cartImg from '../../assets/label/cart.svg';
 import { currencyFormatter } from '../../utils/currencyFormatter';
 import { useProducts } from '../../hooks/useProducts';
+import { useCart } from '../../hooks/useCart';
 
 export function Product() {
 	const [product, setProduct] = useState({});
 	const params = useParams();
 	const products = useProducts();
 	const [productSpecs, setProductSpecs] = useState([]);
+	const { handleAddToCart } = useCart();
 
 	useEffect(() => {
 		const hasProduct = products.filter(product => product.product.includes(params.product));
@@ -141,7 +143,7 @@ export function Product() {
 						</InstallmentTable>
 					</ProductPrice>
 
-					<BuyButton>
+					<BuyButton onClick={() => handleAddToCart(product)}>
 						<img src={cartImg} />
 						COMPRAR
 					</BuyButton>
