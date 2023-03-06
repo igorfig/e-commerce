@@ -16,6 +16,10 @@ export const EmptyCartContainer = styled.div`
 	flex-direction: column;
 	padding: 5rem;
 
+	@media(max-width: 640px) {
+		padding: 2rem 1rem;
+	}
+
 	strong {
 		font-weight: 700;
 		font-size: 2rem;
@@ -34,7 +38,7 @@ export const Button = styled.a`
 	justify-content: center;
 
 	height: 65px;
-	width: 30%;
+	max-width: 100%;
 	padding: 1rem;
 	margin-top: 5rem;
 

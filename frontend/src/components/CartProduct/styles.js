@@ -44,7 +44,7 @@ export const ProductHeader = styled.div`
 		color: var(--red);
 		border-radius: .25rem;
 		font-weight: bold;
-
+		padding: 1rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;

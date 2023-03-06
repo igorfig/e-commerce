@@ -11,6 +11,7 @@ export const Container = styled.div`
 
 	position: relative;
 
+	padding: 0 1rem;
 	& + div {
 		border-top: 1px solid var(--gray-soft);
 		padding-top: 1rem;
@@ -20,7 +21,6 @@ export const Container = styled.div`
 export const ProductDetailsContainer = styled.div`
 	display: flex;
 	flex-direction: row;
-
 	gap: 2rem;
 
 	@media(max-width: 640px) {
@@ -34,6 +34,7 @@ export const ProductDescription = styled.div`
 	align-items: center;
 	flex-basis: 70%;
 	gap: 1rem;
+	padding-top: 1rem;
 
 	div {
 		display: flex;
@@ -56,11 +57,9 @@ export const ProductDescription = styled.div`
 	}
 
 	img {
-		width: 96px;
 		height: 96px;
 
 		@media(max-width: 640px) {
-			width: 64px;
 			height: 64px;
 		}
 	}

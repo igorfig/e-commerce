@@ -100,7 +100,7 @@ export const CartLink = styled.a`
 	${({ isCartEmpty }) => !isCartEmpty &&  `&::before { 
 		content: attr(data-count);
 		background: var(--secondary-color);
-		font-size: .8rem;
+		font-size: .6rem;
 		color: var(--white);
 		display: flex;
 		align-items: center;
@@ -112,10 +112,6 @@ export const CartLink = styled.a`
 		right: 0;
 		border-radius: 50%;
 	};
-
-	img {
-		width: 36px;
-		height: 36px;
-	}`
+	`
 	}
 `

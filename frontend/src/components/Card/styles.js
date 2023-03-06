@@ -17,15 +17,6 @@ export const ProductInfo = styled.div`
 	align-items: center;
 	justify-content: space-between;
 
-	div:first-child {
-		max-width: 80px;
-		text-align: center;
-		font-size: .7rem;
-		border: 1px solid var(--secondary-color);
-		padding: .2rem;
-		color: var(--secondary-color);
-	}
-
 `
 
 export const ProductRate = styled.div`
@@ -89,4 +80,5 @@ export const CartButton = styled.button`
 	&:hover {
 		filter: brightness(.9);
 	}
+
 `
