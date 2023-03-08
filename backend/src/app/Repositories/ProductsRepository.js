@@ -17,7 +17,7 @@ class ProductsRepository {
   }
 
   async updateProductValues(productAmount, productPrice, id) {
-    const [row] = await db.query(`
+    const [row ] = await db.query(`
       UPDATE products
       SET amount = $1, price = $2
       WHERE id = $3
@@ -32,6 +32,16 @@ class ProductsRepository {
       SET amount = $1
       WHERE id = $2
     `, [productAmount, id]);
+    return row;
+  }
+
+  async likeProduct(liked, id) {
+    const [row] = await db.query(`
+      UPDATE products
+      SET liked = $1
+      WHERE id = $2
+    `, [liked, id])
+    return row;
   }
 }
 

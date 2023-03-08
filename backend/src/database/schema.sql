@@ -9,5 +9,6 @@ CREATE TABLE IF NOT EXISTS products(
   amount INTEGER,
   price FLOAT,
   icon_reference VARCHAR,
-  product_category VARCHAR
+  product_category VARCHAR,
+  liked BOOLEAN
 );

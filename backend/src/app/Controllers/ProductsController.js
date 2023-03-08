@@ -24,10 +24,9 @@ class ProductsController {
       if(cartAmount > 0) {
         const stock = userCartAction === 'add' ? amount - cartAmount : amount + cartAmount;
         const product = await ProductsRepository.updateProductStockAmount(stock, id);
-        response.sendStatus(200);
+        response.sendStatus(200).json(product);
       }
   }
-
 
   async update(request, response) {
     const { id } = request.params;
@@ -39,6 +38,15 @@ class ProductsController {
     
     const product = await ProductsRepository.updateProductValues(productAmount, productPrice, id);
     response.sendStatus(200).json(product);
+  }
+
+    async updateProductLike(request, response) {
+    const { id } = request.params;
+    const { liked } = request.query;
+    
+    const product = await ProductsRepository.likeProduct(liked, id);
+
+    response.sendStatus(200).json(product)
   }
 }
 
