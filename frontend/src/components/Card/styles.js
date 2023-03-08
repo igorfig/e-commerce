@@ -17,6 +17,27 @@ export const ProductInfo = styled.div`
 	align-items: center;
 	justify-content: space-between;
 
+	button {
+		background: transparent;
+		border: none;
+
+		&.liked {
+			animation: scale .3s 1 ease-in;
+			svg {
+				fill: var(--red);
+			}
+
+			@keyframes scale {
+				0% {
+					transform: scale(1.2);
+				}
+
+				100% {
+					transform: scale(1);
+				}
+			}
+		}
+	}
 `
 
 export const ProductRate = styled.div`
