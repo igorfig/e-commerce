@@ -14,10 +14,9 @@ import logoGamerImg from '../../assets/layout/logoGamer.png'
 import rightArrowImg from '../../assets/label/arrow.svg'
 
 export function ProductsBoard({ applyOpacity }) {
-	const products = useProducts();
+	const { products } = useProducts();
 	const [isAllProductsSectionHide, setIsAllProductsSectionHide] = useState(false);
 	const [hidden, setIsHidden] = useState(false);
-
 	const featuredProducts = products.filter(product => product.product_category === 'placa-de-video' || product.product_category === 'processadores' || product.product_category === 'computadores');
 	const bestsellingProducts = products.filter(product => product.product.includes('iPhone') || product.product.includes('Xbox Series') || product.product.includes('Playstation 5') ||product.product.includes('RTX'));
 	const mostSearchedProducts = products.filter(product => product.product_category === 'smartphones' || product.product_category === 'computadores' || product.product.includes('Controle DualShock') || product.product.includes('Controle Xbox'))

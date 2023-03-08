@@ -13,7 +13,7 @@ import { useNavigate } from 'react-router-dom';
 export function SearchBar({ isSearchBarOnFocus = false, handleSearchBarFocus = () => {}}) {
 	const [searchbarValue, setSearchbarValue] = useState('');
 	const [productsMatches, setProductsMatches] = useState([]);
-	const products = useProducts();
+	const { products } = useProducts();
 	const navigate = useNavigate();
 	const timeoutRef = useRef(null);
 
