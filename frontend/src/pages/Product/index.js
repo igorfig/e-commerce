@@ -30,7 +30,7 @@ import { useCart } from '../../hooks/useCart';
 export function Product() {
 	const [product, setProduct] = useState({});
 	const params = useParams();
-	const products = useProducts();
+	const { products } = useProducts();
 	const [productSpecs, setProductSpecs] = useState([]);
 	const { handleAddToCart } = useCart();
 
@@ -105,7 +105,7 @@ export function Product() {
 				<PaymentCardInfo>
 					<ProductDetails>
 						<small>Vendido e entregue por: <strong>Link Start</strong></small>
-						<strong>Produto em Estoque</strong>
+						<strong className={product?.amount > 0 ? 'has-stock' : ''}>{product?.amount > 0 ? "Produto em Estoque" : "Produto Indisponível"} {console.log(product?.amount)}</strong>
 					</ProductDetails>
 
 					<ProductPrice>

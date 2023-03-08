@@ -149,7 +149,10 @@ export const ProductDetails = styled.div`
 
 	strong {
 		font-weight: bold;
-		color: var(--green);
+		color: var(--red);
+		&.has-stock {
+			color: var(--green);
+		}
 	}
 `
 
