@@ -16,6 +16,7 @@ import { Cart } from '../pages/Cart';
 import { Product } from '../pages/Product';
 import { Dashboard } from '../pages/Dashboard';
 import { ProductCategory } from '../pages/ProductCategory';
+import {FavoriteProducts} from '../pages/FavoriteProducts';
 
 import { useProducts } from '../hooks/useProducts';
 
@@ -32,6 +33,7 @@ export function AppRoutes({ handleChangeBackgroundColor, banners }) {
         <Route path={`/produto/:product`} element={<Product />} />
       	<Route exact path={`/dashboard`} element={<Dashboard />} />
       	<Route exact path={`/:optionalPath?/:category`} element={<ProductCategory />} />
+      	<Route exact path={`/favoritos`} element={<FavoriteProducts />}/>
 			</Routes>
 			<Footer />
 		</Router>
