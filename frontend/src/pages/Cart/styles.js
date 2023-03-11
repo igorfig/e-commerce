@@ -22,7 +22,7 @@ export const EmptyCartContainer = styled.div`
 
 	strong {
 		font-weight: 700;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		color: var(--font-color-bold);
 		margin-bottom: 2rem;
 	}

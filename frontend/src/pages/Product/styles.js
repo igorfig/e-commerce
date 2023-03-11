@@ -141,7 +141,7 @@ export const ProductDetails = styled.div`
 
 	small {
 		font-size: .8rem;
-		color: var(--font);
+		color: var(--font-color);
 		strong {
 			color: var(--font-bold);
 		}

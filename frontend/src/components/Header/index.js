@@ -65,7 +65,6 @@ export function Header({ isSearchBarOnFocus, handleSearchBarFocus }) {
 					<img src={dashboardIconImg} /> 
 					Dashboard
 				</DashboardLink> }
-
 				{ !isRootAuthenticated &&	
 					<CartLink isCartEmpty={false} data-count={cartProductsAmount} href="/carrinho">
 						<img src={cartImg} alt="Carrinho" />
