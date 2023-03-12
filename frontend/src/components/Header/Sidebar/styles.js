@@ -49,15 +49,24 @@ export const SidebarHeader = styled.div`
 
 `
 
-export const Logo = styled.span`
+export const Logo = styled.a`
 	margin-left: 1rem;
 
-	span{
+	span {
 		font-size: 2.5rem;
 		sup{
 			font-size: 1.5rem;
 		}
 	}
+`
+
+export const Options = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 1rem;
+
+	gap: 1.5rem;
 `
 
 export const Button = styled.button`
@@ -67,52 +76,10 @@ export const Button = styled.button`
 	outline: none;
 `
 
-export const ResultList = styled.ul`
-	list-style: none;
-	width: 100%;
-	max-height: 350px;
-	padding: 1rem;
-	margin-top: 1rem;
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 1rem;
-`
-
-export const Result = styled.li`
-	border-radius: .25rem;
-	display: flex;
-	align-items: center;
-	height: 60px;
-	background: ${transparentize(.9, '#cccccc')};
-	padding: 0 .4rem;
-	color: var(--white);
-
-	img {
-		margin-right: 5%;
-	}
-`
-
-export const ProductInfo = styled.div`
-	width: 100%;
-	display: flex;	
-	flex-direction: column;
-	
-	a {
-		text-decoration: none;
-		color: var(--white);
-		font-size: .7rem;
-	}
-
-	strong {
-		font-weight: 700;
-		font-size: .8rem;
-		color: var(--secondary-color);
-	}
-`
-
 export const Actions = styled.div`
 	position: fixed;
 	bottom: .5rem;
 	display: inline-flex;
 	align-items: center;
 `
+
