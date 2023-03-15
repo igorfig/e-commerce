@@ -12,7 +12,10 @@ class UserController {
 
 		if(username.trim().toLowerCase() === user.username.trim().toLowerCase() && password === user.password) {
 			const token = jwt.sign({ username }, 'secret_key');
-			response.json({ token })
+			response.json({ token, user: {
+				id: user.id,
+				username: user.username
+			}})
 		} else {
 			response.status(401).json({ message: "Credenciais inválidas" });
 		}
