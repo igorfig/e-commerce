@@ -31,9 +31,9 @@ function App() {
     <>
       <GlobalStyles backgroundColor={backgroundColor}/>
       <ProductsProvider>
-        <CartProvider>
-          <AppRoutes handleChangeBackgroundColor={handleChangeBackgroundColor} banners={banners}/>
-        </CartProvider>
+          <CartProvider>
+            <AppRoutes handleChangeBackgroundColor={handleChangeBackgroundColor} banners={banners}/>
+          </CartProvider>
       </ProductsProvider>
     </>
   );

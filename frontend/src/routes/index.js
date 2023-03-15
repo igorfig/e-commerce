@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import Cookies from 'js-cookie';
 
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
 } from "react-router-dom";
 
 import { Header } from '../components/Header';
@@ -16,26 +16,35 @@ import { Cart } from '../pages/Cart';
 import { Product } from '../pages/Product';
 import { Dashboard } from '../pages/Dashboard';
 import { ProductCategory } from '../pages/ProductCategory';
-import {FavoriteProducts} from '../pages/FavoriteProducts';
-
+import { FavoriteProducts } from '../pages/FavoriteProducts';
+import { UserProvider } from '../providers/userProvider';
 import { useProducts } from '../hooks/useProducts';
 
 export function AppRoutes({ handleChangeBackgroundColor, banners }) {
 	const [isSearchBarOnFocus, setIsSearchBarOnFocus] = useState(false);
+	const token = useRef(Cookies.get('token'))
+
+	useEffect(() => {
+		if(!token.current) {
+			console.log(token);
+		}
+	}, [])
   const handleSearchBarFocus = (status) => setIsSearchBarOnFocus(status);
 	return (
 		<Router>
-			<Header isSearchBarOnFocus={isSearchBarOnFocus} handleSearchBarFocus={handleSearchBarFocus}/>
-			<Routes>
-				<Route exact path="/" element={<Home handleChangeBackgroundColor={handleChangeBackgroundColor} isSearchBarOnFocus={isSearchBarOnFocus} banners={banners}/>} />
-        <Route exact path="/login" element={<Login />} />
-        <Route exact path="/carrinho" element={<Cart />} />
-        <Route path={`/produto/:product`} element={<Product />} />
-      	<Route exact path={`/dashboard`} element={<Dashboard />} />
-      	<Route exact path={`/:optionalPath?/:category`} element={<ProductCategory />} />
-      	<Route exact path={`/favoritos`} element={<FavoriteProducts />}/>
-			</Routes>
-			<Footer />
+			<UserProvider>
+				<Header isSearchBarOnFocus={isSearchBarOnFocus} handleSearchBarFocus={handleSearchBarFocus}/>
+				<Routes>
+					<Route exact path="/" element={<Home handleChangeBackgroundColor={handleChangeBackgroundColor} isSearchBarOnFocus={isSearchBarOnFocus} banners={banners}/>} />
+	        <Route exact path="/login" element={token.current ? <Home handleChangeBackgroundColor={handleChangeBackgroundColor} isSearchBarOnFocus={isSearchBarOnFocus} banners={banners}/> : <Login />} />
+	        <Route exact path="/carrinho" element={<Cart />} />
+	        <Route path={`/produto/:product`} element={<Product />} />
+	      	<Route exact path={`/dashboard`} element={<Dashboard />} />
+	      	<Route exact path={`/:optionalPath?/:category`} element={<ProductCategory />} />
+	      	<Route exact path={`/favoritos`} element={<FavoriteProducts />}/>
+				</Routes>
+				<Footer />
+			</UserProvider>
 		</Router>
 	)
 }

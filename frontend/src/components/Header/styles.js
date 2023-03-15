@@ -64,6 +64,7 @@ export const HeaderActions = styled.div`
 	display: flex;
 	align-items: center;
 	position: absolute;
+	gap: 2rem;
 	@media(min-width: 1023px) {
 		right: ${({ isLoginPage }) => isLoginPage ? '10rem' : '5rem'};
 	}
