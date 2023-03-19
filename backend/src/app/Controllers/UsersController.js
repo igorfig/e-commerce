@@ -30,7 +30,7 @@ class UserController {
 			response.sendStatus(400).json({ message: "O usuário já está cadastro"});
 		} else {
 			if(username && password) {
-				const user = await UsersRepository.save(username, password);
+				const user = await UsersRepository.create(username, password);
 
 				response.sendStatus(201).json(user);
 			}

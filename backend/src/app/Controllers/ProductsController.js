@@ -1,4 +1,4 @@
-const ProductsRepository = require('../Repositories/ProductsRepository')
+const ProductsRepository = require('../Repositories/ProductsRepository');
 
 class ProductsController {
   async index(request, response) {
@@ -40,7 +40,7 @@ class ProductsController {
     response.sendStatus(200).json(product);
   }
 
-    async updateProductLike(request, response) {
+  async updateProductLike(request, response) {
     const { id } = request.params;
     const { liked } = request.query;
     

@@ -10,7 +10,7 @@ class UserRepository {
 		return row;
 	}
 
-	async save(username, password) {
+	async create(username, password) {
 		const [row] = await db.query(`
 			INSERT INTO users(username, password)
 			VALUES($1, $2)

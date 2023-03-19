@@ -34,15 +34,6 @@ class ProductsRepository {
     `, [productAmount, id]);
     return row;
   }
-
-  async likeProduct(liked, id) {
-    const [row] = await db.query(`
-      UPDATE products
-      SET liked = $1
-      WHERE id = $2
-    `, [liked, id])
-    return row;
-  }
 }
 
 module.exports = new ProductsRepository();
