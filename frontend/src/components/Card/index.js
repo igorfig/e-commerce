@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 import Storage from '../../utils/storage.js';
 import { 
 	Container,
@@ -20,12 +21,27 @@ import { useProducts } from '../../hooks/useProducts';
 
 export function Card({ product }) {
 	const { handleAddToCart } = useCart();
-	const { products, handleLikeProduct } = useProducts();
+	const { products, favorites, handleLikeProduct, handleUnlikeProduct } = useProducts();
+	const [isLiked, setIsLiked] = useState(false);
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		const isProductLiked = favorites && favorites.find(favorite => favorite.product.id === product.id);
+		setIsLiked(Boolean(isProductLiked));
+	}, [])
 
 	return (
 		<Container>
 			<ProductInfo>
-			    <button onClick={() => handleLikeProduct(product.id)} className={product.liked ? 'liked' : ''}>
+			    <button onClick={() => {
+			    	const token = Cookies.get('token');
+
+			    	if(token) {
+			    		setIsLiked(prevState => !prevState);
+			    		handleLikeProduct(product);
+			    	} else navigate('/login')
+			    	
+				}} className={isLiked ? 'liked' : ''}>
 			    	<svg
 				      xmlns="http://www.w3.org/2000/svg"
 				      width="24"
@@ -53,7 +69,7 @@ export function Card({ product }) {
 
 			<ProductSpecifications onMouseDown={(e) => e.preventDefault()}> 
 				<ProductImageContainer>
-					<img src={`products/${product.product_category}/${product.icon_reference}.png`} loading="lazy"/>
+					<img src={`products/${product.product_category}/${product.icon_reference}.png`} loading="lazy"/>			
 				</ProductImageContainer>
 				<ProductDescription to={`/produto/${product.product}`} >{product.product.length > 60 ? product.product.substr(0, 55) + "..." : product.product}</ProductDescription>
 			</ProductSpecifications>

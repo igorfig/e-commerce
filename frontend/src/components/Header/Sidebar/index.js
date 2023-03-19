@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Cookies from 'js-cookie';
 import { api } from '../../../services/api'
 import { currencyFormatter } from '../../../utils/currencyFormatter.js'
 import { 
@@ -24,7 +25,7 @@ import starImg from '../../../assets/label/star.svg'
 
 export function Sidebar({ isActive }) {
 	const OptionsContainerRef = useRef();
-
+	const token = Cookies.get('token');
 	const handleCloseSidebar = () => {
 		isActive(false);
 	}
@@ -67,7 +68,7 @@ export function Sidebar({ isActive }) {
 						Meus pedidos
 					</LinkButton>
 
-					<LinkButton to="/favoritos">
+					<LinkButton to={token ? '/favoritos' : '/login'}>
 						<svg
 					      xmlns="http://www.w3.org/2000/svg"
 					      width="24"

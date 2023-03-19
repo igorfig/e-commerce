@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom';
 import {
 	Container,
 	EmptyFavorites,
@@ -15,23 +17,22 @@ import cartImg from '../../assets/label/cart.svg'
 import { currencyFormatter } from '../../utils/currencyFormatter';
 import { useProducts } from '../../hooks/useProducts';
 import { useCart } from '../../hooks/useCart';
+import { useAuth } from '../../hooks/useAuth';
 import emptyFavoritesImg from '../../assets/layout/emptyFavorites.svg'
 
 export function FavoriteProducts() {
-	const [likedProducts, setLikedProducts] = useState([]);
-
-	const { products, handleLikeProduct } = useProducts();
+	const { products, favorites, handleUnlikeProduct } = useProducts();
 	const { handleAddToCart } = useCart();
+	const navigate = useNavigate();
+	const token = Cookies.get('token');
 
-	useEffect(() => {
-		const filteredLikedProducts = products.filter(product => product.liked);
-
-		setLikedProducts(filteredLikedProducts);
-	}, [products])
+	if(!token) {
+		navigate('/login');
+	}
 
 	return (
 		<Container>
-			{likedProducts.length > 0 && <h2>
+			{favorites?.length > 0 && <h2>
 					<svg
 				      xmlns="http://www.w3.org/2000/svg"
 				      width="24"
@@ -49,27 +50,27 @@ export function FavoriteProducts() {
 				    </svg>
 					Meus favoritos
 				</h2>}
-			{likedProducts.length > 0 ? likedProducts.map((product) => (
-				<ProductCard>
-					<img src={`products/${product.product_category}/${product.icon_reference}.png`} alt={product.icon_reference} />
+			{favorites?.length > 0 ? favorites?.map((favorite) => (
+				<ProductCard key={favorite.product.id}>
+					<img src={`products/${favorite?.product.product_category}/${favorite?.product.icon_reference}.png`} alt={favorite?.product.icon_reference} />
 
 					<ProductDetails>
-						<ProductDescription to={`/produto/${product.product}`}>
-							{product.product}
+						<ProductDescription to={`/produto/${favorite?.product.product}`}>
+							{favorite?.product.product}
 						</ProductDescription>
 
 						<ProductPrice>
 							<small>
-								{currencyFormatter(((product.price * 10) / 100) + product.price)}
+								{currencyFormatter(((favorite?.product.price * 10) / 100) + favorite?.product.price)}
 							</small>
 							<strong>
-								{currencyFormatter(product.price)}
+								{currencyFormatter(favorite?.product.price)}
 							</strong>	
 						</ProductPrice>
 					</ProductDetails>
 
 					<Actions>
-							<button onClick = {() => handleLikeProduct(product.id)}>
+							<button onClick={() => handleUnlikeProduct(favorite.product)}>
 								<svg
 							      xmlns="http://www.w3.org/2000/svg"
 							      width="32"
@@ -87,7 +88,7 @@ export function FavoriteProducts() {
 				    			</svg>
 							</button>
 
-							<button onClick={() => handleAddToCart(product, true)}>
+							<button onClick={() => handleAddToCart(favorite?.product, true)}>
 								<svg
 							      xmlns="http://www.w3.org/2000/svg"
 							      width="36"

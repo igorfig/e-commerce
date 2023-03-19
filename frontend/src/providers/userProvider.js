@@ -57,6 +57,7 @@ export function UserProvider({ children }) {
 	const logout = () => {
 		Cookies.remove('token');
 		Cookies.remove('user');
+		Cookies.remove('favorites');
 		setIsLoggedIn(false);
 		setUser({});
 	}

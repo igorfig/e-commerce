@@ -9,7 +9,6 @@ export function Login() {
 	const [password, setPassword] = useState('');
 	const { login } = useAuth();
 
-
 	const handleGetUsername = (event) => setUsername(event.target.value);
 	const handleGetPassword = (event) => setPassword(event.target.value);
 	return (
@@ -18,18 +17,18 @@ export function Login() {
 				<h2>INICIAR SESSÃO</h2>
 
 				<Form>
-					<InputContainer>
+					<InputContainer hasContent={username ? true : false}>
 						<input type="text" id="user-id" onChange={handleGetUsername}/>
 						<label htmlFor="user-id">Usuário, e-mail ou CPF</label>
 					</InputContainer>
-					<InputContainer>
+					<InputContainer hasContent={password ? true : false}>
 						<input type="password" id="password" onChange={handleGetPassword}/>
 						<label htmlFor="password">Senha</label>
 					</InputContainer>
 
 					<SubmitLogin onClick={(event) => { 
 						event.preventDefault();
-						login(username, password)
+						login(username, password);
 					}}>
 						<img src={loginEnterImg} />
 						ENTRAR
