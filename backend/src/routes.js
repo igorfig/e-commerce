@@ -1,5 +1,6 @@
 const { Router } = require('express');
-const ProductsController = require('./app/Controllers/ProductsController')
+const ProductsController = require('./app/Controllers/ProductsController');
+const FavoritesProductsController = require('./app/Controllers/FavoritesProductsController.js');
 const UsersController = require('./app/Controllers/UsersController');
 const router = Router();
 
@@ -9,6 +10,12 @@ router.get('/products', ProductsController.index);
 router.get('/products/:id', ProductsController.show);
 router.post('/login', UsersController.authUser);
 router.post('/register', UsersController.createUser);
+
+router.get('/user/favorites/:userId', FavoritesProductsController.index);
+router.get('/user/favorites/product/:id', FavoritesProductsController.show);
+router.post('/user/favorites/:userId', FavoritesProductsController.store);
+router.delete('/user/favorites/:userId', FavoritesProductsController.delete);
+
 router.patch('/products/:id', ProductsController.productStockHandler);
 router.patch('/products/liked/:id', ProductsController.updateProductLike);
 //dashboard
