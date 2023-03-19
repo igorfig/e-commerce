@@ -62,6 +62,18 @@ export const InputContainer = styled.div`
 		padding: 0 1rem;
 
 		transition: transform .5s;
+
+		& {
+			${({ hasContent }) => hasContent && `
+				transform: translateY(-25px);
+				background: #fff;
+				color: var(--secondary-color);
+				font-size: 1rem;
+				opacity: 1;
+				padding: 0;
+				margin-left: 1rem;	
+			`}
+		}
 	}
 
 	& input:focus ~ label {

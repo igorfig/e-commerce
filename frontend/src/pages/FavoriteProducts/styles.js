@@ -5,7 +5,7 @@ export const Container = styled.div`
 	padding: 2rem;
 
 	@media(max-width: 720px) {
-		padding: 1rem 0;
+		padding: 2rem 1rem;
 	}
 	h2 {
 		display: inline-flex;
