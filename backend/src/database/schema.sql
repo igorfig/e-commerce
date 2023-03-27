@@ -27,5 +27,6 @@ CREATE TABLE IF NOT EXISTS favorites(
 CREATE TABLE IF NOT EXISTS orders (
   id UUID NOT NULL UNIQUE DEFAULT uuid_generate_v4(),
   user_id INTEGER NOT NULL REFERENCES users(id),
-  order_details JSONB NOT NULL
+  order_details JSONB NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
