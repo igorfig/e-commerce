@@ -23,3 +23,9 @@ CREATE TABLE IF NOT EXISTS favorites(
   user_id INTEGER NOT NULL REFERENCES users(id),
   product JSONB NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS orders (
+  id UUID NOT NULL UNIQUE DEFAULT uuid_generate_v4(),
+  user_id INTEGER NOT NULL REFERENCES users(id),
+  order_details JSONB NOT NULL
+);
