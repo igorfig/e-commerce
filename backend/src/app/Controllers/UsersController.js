@@ -4,7 +4,7 @@ const UsersRepository = require('../Repositories/UsersRepository');
 class UserController {
 	async authUser(request, response) {
 		const { username, password } = request.body;
-		const user = await UsersRepository.findUser(username);
+		const user = await UsersRepository.findUserByUsername(username);
 
 		if(!user) {
 			return response.sendStatus(404);
@@ -24,7 +24,7 @@ class UserController {
 	async createUser(request, response) {
 		const { username, password } = request.body;
 
-		const isRegistered = await UsersRepository.findUser(username);
+		const isRegistered = await UsersRepository.findUserByUsername(username);
 
 		if(isRegistered) {
 			response.sendStatus(400).json({ message: "O usuário já está cadastro"});

@@ -1,11 +1,20 @@
 const db = require("../../database/index");
 
 class UserRepository {
-	async findUser(username) {
+	async findUserByUsername(username) {
 		const [row] = await db.query(`
 			SELECT * FROM users
 			WHERE username = $1
 		`, [username])
+
+		return row;
+	}
+
+	async findUserById(userId) {
+		const [row] = await db.query(`
+			SELECT * FROM users
+			WHERE id = $1
+		`, [userId])
 
 		return row;
 	}

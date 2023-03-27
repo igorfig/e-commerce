@@ -21,7 +21,7 @@ class FavoriteProductsController {
 	    const { username } = request.query;
 	    const product = request.body;
 	   
-	    const user = await UsersRepository.findUser(username);
+	    const user = await UsersRepository.findUserByUsername(username);
 	    const favoriteProduct = await FavoriteProductsRepository.getAllFavoriteProducts(userId, product.id);
 
 	    const productIndex = favoriteProduct.findIndex(data => data.product.id === product.id);
