@@ -19,12 +19,12 @@ class UserOrdersRepository {
 		return row;
 	}
 
-	async create(userId, orderDetails) {
+	async create(user_id, order_details) {
 		const [row] = await db.query(`
 			INSERT INTO orders(user_id, order_details)
 			VALUES($1, $2)
 			RETURNING *
-		`, [userId, orderDetails])
+		`, [user_id, JSON.stringify(order_details)])
 
 		return row;
 	}

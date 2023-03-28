@@ -15,11 +15,11 @@ class UserOrdersController {
 	}
 
 	async store(request, response) {
-		const { user_id, orders_details } = request.body;
+		const { user_id, order_details } = request.body;
 
-		const order = await UserOrdersRepository.create(JSON.parse(user_id), JSON.stringify(orders_details));
+		const order = await UserOrdersRepository.create(user_id, order_details);
 
-		response.status(201).json(order);
+		response.json(order)
 	}
 }
 
