@@ -94,8 +94,10 @@ export function CartProvider({ children }) {
 		await api.patch(`/products/${id}?cartAmount=${amount}&userCartAction=restore`)
 	}
 
+	const submitUserOrder = () => setCartProducts([]);
+
 	return (
-		<CartContext.Provider value={{cartProducts, cartProductsAmount, handleAddToCart, handleRestoreStock, handleRemoveFromCart, handleRemoveAllProducts}}>
+		<CartContext.Provider value={{cartProducts, cartProductsAmount, handleAddToCart, handleRestoreStock, handleRemoveFromCart, handleRemoveAllProducts, submitUserOrder}}>
 			<>
 				{children}
 				<ToastContainer

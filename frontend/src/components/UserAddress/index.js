@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-
+import Cookies from 'js-cookie';
 import { Container, SearchAddressContainer, UserAddressResult } from './styles';
 import { api } from '../../services/api';
 import mapMarkerImg from '../../assets/layout/mapMarker.svg'
@@ -45,8 +45,6 @@ export function UserAddress() {
 				setIsCepValid(false);
 				setUserAddress({});
 			}
-
-			console.log(userAddress);
 		} else {
 			toast.error('O CEP digitado é inválido!', {
 				position: "top-left",
@@ -60,6 +58,11 @@ export function UserAddress() {
 			});
 		}
 	} 
+
+	useEffect(() => { 
+		Cookies.set('address', JSON.stringify(userAddress ? userAddress : {}));
+		return () => Cookies.remove('address');
+	}, [userAddress]); 
 
 	const handleKeyDown = (event) => {
 		if(event.key === 'Enter') {
