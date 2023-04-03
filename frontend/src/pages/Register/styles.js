@@ -16,12 +16,17 @@ export const Container = styled.div`
 `
 
 export const Form = styled.form`
-	display: flex;
+	display: grid;
 	align-items: center;
-	flex-direction: column;
-	margin-top: 3rem;
+	grid-template-columns: repeat(2, 1fr);
 
-	
+	@media(max-width: 720px) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	gap: 1rem;
+	margin-top: 3rem;
 `
 
 export const InputContainer = styled.div`
@@ -41,6 +46,11 @@ export const InputContainer = styled.div`
 
 	margin-bottom: 2rem;
 
+
+	&.email {
+		width: 100%;
+		grid-column: 1/3;
+	}
 
 	input {
 		width: 100%;
@@ -87,8 +97,9 @@ export const InputContainer = styled.div`
 	}
 `
 
-export const SubmitLogin = styled.button`
+export const RegisterButton = styled.button`
 	width: 100%;
+	grid-column: 1/3;
 	height: 45px;
 	background: var(--cta-color);
 	border-radius: .25rem;
@@ -113,8 +124,7 @@ export const SubmitLogin = styled.button`
 	}
 `
 
-export const RegisterLink = styled.span`
-	align-self: flex-start;
+export const LoginLink = styled.span`
 	margin-top: 1rem;
 
 	color: var(--dark-gray);

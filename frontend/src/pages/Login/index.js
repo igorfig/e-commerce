@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Form, InputContainer, SubmitLogin } from './styles';
+import { Container, Form, InputContainer, SubmitLogin, RegisterLink } from './styles';
 import loginEnterImg from '../../assets/label/login-enter.svg';
 import { useAuth } from '../../hooks/useAuth';
 
@@ -33,6 +33,8 @@ export function Login() {
 						<img src={loginEnterImg} />
 						ENTRAR
 					</SubmitLogin>	
+
+					<RegisterLink>É novo por aqui? <a href="/cadastro">CADASTRE-SE</a></RegisterLink>
 				</Form>
 			</Container>
 		</>
