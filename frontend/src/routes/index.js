@@ -12,6 +12,7 @@ import { Footer } from '../components/Footer';
 
 import { Home } from '../pages/Home';
 import { Login } from '../pages/Login';
+import { Register } from '../pages/Register';
 import { Cart } from '../pages/Cart';
 import { Product } from '../pages/Product';
 import { Dashboard } from '../pages/Dashboard';
@@ -38,9 +39,9 @@ export function AppRoutes({ handleChangeBackgroundColor, banners }) {
 				<Routes>
 					<Route exact path="/" element={<Home handleChangeBackgroundColor={handleChangeBackgroundColor} isSearchBarOnFocus={isSearchBarOnFocus} banners={banners}/>} />
 	        <Route exact path="/login" element={token.current ? <Home handleChangeBackgroundColor={handleChangeBackgroundColor} isSearchBarOnFocus={isSearchBarOnFocus} banners={banners}/> : <Login />} />
+	        <Route exact path="/cadastro" element={token.current ? <Home handleChangeBackgroundColor={handleChangeBackgroundColor} isSearchBarOnFocus={isSearchBarOnFocus} banners={banners}/> : <Register />} />
 	        <Route exact path="/carrinho" element={<Cart />} />
 	        <Route path={`/produto/:product`} element={<Product />} />
-	      	<Route exact path={`/dashboard`} element={<Dashboard />} />
 	      	<Route exact path={`/:optionalPath?/:category`} element={<ProductCategory />} />
 	      	<Route exact path={`/favoritos`} element={<FavoriteProducts />}/>
 	      	<Route exact path={`/pedidos`} element={<Orders />} />
