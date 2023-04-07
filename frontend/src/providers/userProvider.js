@@ -2,6 +2,7 @@ import { createContext, useState, useEffect } from 'react';
 import { api } from '../services/api';
 import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 export const UserContext = createContext({});
 	
@@ -50,7 +51,7 @@ export function UserProvider({ children }) {
 			setIsLoggedIn(true);
 			navigate('/');
 		} catch {
-			alert('Credenciais inválidas')
+			toast.error('Usuário ou senha incorretas.')
 		}
 	}
 
