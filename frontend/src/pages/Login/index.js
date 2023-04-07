@@ -19,7 +19,7 @@ export function Login() {
 				<Form>
 					<InputContainer hasContent={username ? true : false}>
 						<input type="text" id="user-id" onChange={handleGetUsername}/>
-						<label htmlFor="user-id">Usuário, e-mail ou CPF</label>
+						<label htmlFor="user-id">Nome de usuário</label>
 					</InputContainer>
 					<InputContainer hasContent={password ? true : false}>
 						<input type="password" id="password" onChange={handleGetPassword}/>
