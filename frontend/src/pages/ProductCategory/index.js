@@ -19,7 +19,7 @@ import { useParams } from 'react-router-dom';
 import { currencyFormatter } from '../../utils/currencyFormatter';
 
 export function ProductCategory() {
-	const products = useProducts([]);
+	const { products } = useProducts([]);
 	const [productsMatches, setProductsMatches] = useState([]);
 	const { optionalPath, category } = useParams();
 	useEffect(() => {
