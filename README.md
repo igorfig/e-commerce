@@ -23,7 +23,7 @@
 - Após instalaras tecnologias utilizadas neste projeto em sua máquina, faça o clone do projeto:
 
 ```git
-	git clone https://github.com/igorfig/e-commerce.git
+	$ git clone https://github.com/igorfig/e-commerce.git
 ```
 
 - Crie um database PostgreSQL utilizando Docker com todas as tabelas do schema.sql;
@@ -33,14 +33,14 @@
 - Em sua máquina inicie o servidor:
 
 ```zsh 
-	yarn dev
-	node src/database/index
+	$ yarn dev
+	$ node src/database/index
 ```
 
 Também inicie a aplicação front-end:
 
 ```zsh 
-	yarn start
+	$ yarn start
 ```
 
 Após isso, certamente a aplicação estará disponível para testes.
