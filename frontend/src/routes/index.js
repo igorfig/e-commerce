@@ -15,7 +15,6 @@ import { Login } from '../pages/Login';
 import { Register } from '../pages/Register';
 import { Cart } from '../pages/Cart';
 import { Product } from '../pages/Product';
-import { Dashboard } from '../pages/Dashboard';
 import { ProductCategory } from '../pages/ProductCategory';
 import { FavoriteProducts } from '../pages/FavoriteProducts';
 import { Orders } from '../pages/Orders'
