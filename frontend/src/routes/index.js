@@ -25,11 +25,6 @@ export function AppRoutes({ handleChangeBackgroundColor, banners }) {
 	const [isSearchBarOnFocus, setIsSearchBarOnFocus] = useState(false);
 	const token = useRef(Cookies.get('token'))
 
-	useEffect(() => {
-		if(!token.current) {
-			console.log(token);
-		}
-	}, [])
   const handleSearchBarFocus = (status) => setIsSearchBarOnFocus(status);
 	return (
 		<Router>
