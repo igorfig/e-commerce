@@ -44,3 +44,55 @@ Também inicie a aplicação front-end:
 ```
 
 Após isso, certamente a aplicação estará disponível para testes.
+
+
+## Algumas imagens do projeto em sua versão final:
+
+- Página inicial da aplicação, onde mostra todos os produtos, produtos por sessão e algumas ações que o usuário pode executar:
+
+<br>
+
+<img src="./.github/screenshots/home.png" />
+
+
+<br>
+<br>
+<br>
+
+- Página de carrinho, onde o usuário pode adicionar seus produtos para compra:
+
+<br>
+
+<img src="./.github/screenshots/carrinho.png" />
+
+
+<br>
+<br>
+<br>
+
+- Página de pedidos, onde o usuário autenticado pode ver os pedidos que foram feitos:
+
+<br>
+
+<img src="./.github/screenshots/pedidos.png" />
+
+<br>
+<br>
+<br>
+
+- Página de login responsiva em um smartphone:
+
+<br>
+
+<img src="./.github/screenshots/login-mobile.jpeg" />
+
+
+<br>
+<br>
+<br>
+
+- Página com os produtos adicionados aos favoritos pelo usuário que está autenticado:
+
+<br>
+
+<img src="./.github/screenshots/favoritos-mobile.jpeg" />
