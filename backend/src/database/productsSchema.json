@@ -1,0 +1,1091 @@
+[
+	{
+		"id": "d062fbcc-1f39-4dbe-8aa9-5f86fbe21ad2",
+		"product": "Teclado Mecânico Gamer RGB Logitech G512 Carbon com Layout ABNT2, Tecnologia LIGHTSYNC, USB Passthrough e Switch Exclusivo GX Brown",
+		"specs": {
+			"tipo": "Mecânico",
+			"marca": "Logitech",
+			"layout": "ABNT2",
+			"conexão": "USB 2.0",
+			"iluminação": "RGB",
+			"comprimento do cabo": "1.8m",
+			"teclas programáveis": 5,
+			"tecnologia anti-ghosting": "Full Key (NKRO)"
+		},
+		"price": 579.99,
+		"icon_reference": "keyboard-logitech-g512",
+		"product_category": "teclados",
+		"amount": 19
+	},
+	{
+		"id": "b05396d6-ea11-428e-86e0-18e67ab42f39",
+		"product": "PLACA DE VIDEO PCYES RADEON RX 550 2GB GDDR5 128BIT, P2D2RX55012802D5",
+		"specs": {
+			"GPU": "AMD Radeon RX 550",
+			"tipo": "GDDR5",
+			"marca": "PCYes",
+			"modelo": "P2D2RX55012802D5",
+			"memória": "2GB",
+			"clock boost": "1183 MHz",
+			"clock básico": "1183 MHz",
+			"clock de memória:": "7000 MHz",
+			"resolução máxima": "5120x2880",
+			"interface de memória": "128 bits"
+		},
+		"price": 664.88,
+		"icon_reference": "vboard-rx-550",
+		"product_category": "placa-de-video",
+		"amount": 112
+	},
+	{
+		"id": "f805eb3e-0c47-4779-bc4f-f6c88752ea8c",
+		"product": "PLACA DE VIDEO MSI GEFORCE RTX 3090 GAMING X TRIO 24GB GDDR6X, 384-BIT, GDDR6X, HDCP, 3x DP, HDMI, PCI-E 4.0",
+		"specs": {
+			"GPU": "GeForce RTX 3090",
+			"tipo": "GDDR6X",
+			"marca": "MSI",
+			"modelo": "GeForce RTX 3090 GAMING X TRIO",
+			"memória": "24GB",
+			"clock base": "1395 MHz",
+			"clock boost": "1785 MHz",
+			"clock de memória": "19.5 Gbps",
+			"resolução máxima": "7680x4320",
+			"interface de memória": "384 bits",
+			"nº de monitores suportados": 4
+		},
+		"price": 8999.99,
+		"icon_reference": "vboard-rtx-3090",
+		"product_category": "placa-de-video",
+		"amount": 108
+	},
+	{
+		"id": "a0b84315-adf1-4c10-95fa-dd51dda9ca5a",
+		"product": "PLACA DE VIDEO GIGABYTE RADEON RX 5600 XT 6GB GDDR6, GV-R56XTGAMING OC-6GD",
+		"specs": {
+			"GPU": "Radeon RX 5600 XT",
+			"tipo": "GDDR6",
+			"marca": "Gigabyte",
+			"modelo": "GV-R56XTGAMING OC-6GD",
+			"memória": "6GB",
+			"clock boost": "1620 MHz",
+			"clock básico": "1355 MHz",
+			"clock de memória": "12000 MHz",
+			"resolução máxima": "7680x4320",
+			"interface de memória": "192 bits"
+		},
+		"price": 3199,
+		"icon_reference": "vboard-rx-5600xt",
+		"product_category": "placa-de-video",
+		"amount": 97
+	},
+	{
+		"id": "47ec0bb1-50be-4ada-8783-5f4cada29e2a",
+		"product": "Mouse Gamer Razer Viper Ultimate Wireless RGB Chroma, Sensor Óptico 20000 DPI, 8 Botões Programáveis, Aceleração de 650 Polegadas Por Segundo, 5G, Ambidestro",
+		"specs": {
+			"marca": "Razer",
+			"modelo": "Viper Ultimate",
+			"sensor": "Óptico",
+			"formato": "Ambidestro",
+			"resolução": "20000 DPI",
+			"iluminação": "RGB Chroma",
+			"taxa de sondagem": "1000 Hz",
+			"tipo de conexão": "Wireless",
+			"número de botões": 8,
+			"aceleração máxima": "650 polegadas por segundo",
+			"botões programáveis": true
+		},
+		"price": 749.9,
+		"icon_reference": "mouse-razer-viper",
+		"product_category": "mouses",
+		"amount": 103
+	},
+	{
+		"id": "6e2c1887-ae90-4896-8d42-debde6413163",
+		"product": "PLACA DE VIDEO ASUS GEFORCE GTX 1650 4GB GDDR5 128-BIT, PH-GTX1650-O4GD6",
+		"specs": {
+			"GPU": "GeForce® GTX 1650",
+			"tipo": "GDDR5",
+			"marca": "Asus",
+			"modelo": "PH-GTX1650-O4GD6",
+			"memória": "4GB",
+			"clock boost": "1725 MHz",
+			"clock básico": "1485 MHz",
+			"clock de memória:": "8002 MHz",
+			"resolução máxima": "7680x4320",
+			"interface de memória": "128 bits"
+		},
+		"price": 1724.98,
+		"icon_reference": "vboard-gtx-1650",
+		"product_category": "placa-de-video",
+		"amount": 59
+	},
+	{
+		"id": "00cf9ae5-133e-4b8f-aa50-3bc7010e9e94",
+		"product": "SSD Kingston A400 480GB SATA III",
+		"specs": {
+			"tipo": "SATA III",
+			"marca": "Kingston",
+			"modelo": "A400",
+			"capacidade": "480GB",
+			"velocidade de escrita sequencial": "450 MB/s",
+			"velocidade de leitura sequencial": "500 MB/s"
+		},
+		"price": 599.99,
+		"icon_reference": "ssd-kingston-480gb",
+		"product_category": "armazenamento",
+		"amount": 116
+	},
+	{
+		"id": "4dddafcd-8436-4514-9558-c0ccd8125a03",
+		"product": "SSD Samsung 970 EVO Plus 1TB NVMe M.2",
+		"specs": {
+			"tipo": "NVMe M.2",
+			"marca": "Samsung",
+			"modelo": "970 EVO Plus",
+			"capacidade": "1TB",
+			"velocidade de escrita sequencial": "3,300 MB/s",
+			"velocidade de leitura sequencial": "3,500 MB/s"
+		},
+		"price": 1499.9,
+		"icon_reference": "ssd-samsung-1tb",
+		"product_category": "armazenamento",
+		"amount": 47
+	},
+	{
+		"id": "88834052-774a-45a6-8932-0498e334a47b",
+		"product": "Fonte EVGA 750W 80 Plus Bronze Semi Modular",
+		"specs": {
+			"marca": "EVGA",
+			"potência": "750W",
+			"proteção": "OVP, UVP, OCP, OPP, SCP, OTP",
+			"eficiência": "80 Plus Bronze",
+			"modularidade": "Semi Modular"
+		},
+		"price": 799.99,
+		"icon_reference": "psu-evga-750w",
+		"product_category": "fontes",
+		"amount": 23
+	},
+	{
+		"id": "1c1f89c0-0ce4-47c1-ac1b-c095827bdb4e",
+		"product": "Memória RAM Corsair Vengeance RGB Pro 16GB DDR4 3200MHz C16 - Preto",
+		"specs": {
+			"cor": "Preto",
+			"tipo": "DDR4",
+			"marca": "Corsair",
+			"modelo": "Vengeance RGB Pro",
+			"latência": "C16",
+			"capacidade": "16GB",
+			"velocidade": "3200MHz",
+			"iluminação": "RGB"
+		},
+		"price": 599.99,
+		"icon_reference": "ram-corsair-16",
+		"product_category": "memoria-ram",
+		"amount": 91
+	},
+	{
+		"id": "fd1b5539-9a2d-4bf9-9686-6380bd1b8ec5",
+		"product": "Placa de Vídeo RTX 4090 SG Galax NVIDIA GeForce, 24 GB GDDR6X, ARGB, DLSS, Ray Tracing - 49NXM5MD6DSG",
+		"specs": {
+			"GPU": "GeForce RTX 4090",
+			"tipo": "GDDR6X",
+			"marca": "Galax",
+			"modelo": "49NXM5MD6DSG",
+			"memória": "24 GB",
+			"clock boost": "2580 MHz",
+			"clock básico": "2230 MHz",
+			"interface de memória": "384 bits"
+		},
+		"price": 12999.99,
+		"icon_reference": "vboard-rx-6900xt",
+		"product_category": "placa-de-video",
+		"amount": 130
+	},
+	{
+		"id": "1ac34022-49d0-4c82-a4c4-5b0f3fe8a68d",
+		"product": "Fonte de Alimentação Corsair RM850x 850W 80 Plus Gold Full Modular",
+		"specs": {
+			"marca": "Corsair",
+			"potência": "850W",
+			"proteção": "OVP, UVP, SCP, OPP, OTP, OTP, OCP, NLO",
+			"eficiência": "80 Plus Gold",
+			"modularidade": "Full Modular"
+		},
+		"price": 1099.9,
+		"icon_reference": "psu-corsair-850w",
+		"product_category": "fontes",
+		"amount": 37
+	},
+	{
+		"id": "dea2890a-c8c8-400f-bb02-08da357c8b07",
+		"product": "Mouse Logitech G Pro Wireless Gaming",
+		"specs": {
+			"tipo": "Sem fio",
+			"marca": "Logitech",
+			"sensor": "HERO 16K",
+			"conexão": "USB",
+			"resolução": "16000 DPI",
+			"taxa de transmissão": "1 ms",
+			"botões programáveis": 8
+		},
+		"price": 399.99,
+		"icon_reference": "mouse-logitech-gpro",
+		"product_category": "mouses",
+		"amount": 60
+	},
+	{
+		"id": "d05b6a78-7f29-49b1-b089-9781ca56a93c",
+		"product": "Mouse sem fio Logitech MX Master 3 Advanced, 7 botões, USB-C, 4000 DPI",
+		"specs": {
+			"marca": "Logitech",
+			"conector": "USB-C",
+			"tipo_conexão": "sem fio",
+			"número_botões": 7,
+			"resolução_dpi": 4000
+		},
+		"price": 649.99,
+		"icon_reference": "mouse-logitech-mxmaster",
+		"product_category": "mouses",
+		"amount": 133
+	},
+	{
+		"id": "0f1fa108-4585-4461-92a0-3d377b7f4ece",
+		"product": "Memória RAM Corsair 4GB DDR4 2133MHz C15 - Preto",
+		"specs": {
+			"cor": "Preto",
+			"tipo": "DDR4",
+			"marca": "Corsair",
+			"latência": "C15",
+			"capacidade": "4GB",
+			"velocidade": "2133MHz"
+		},
+		"price": 179.99,
+		"icon_reference": "ram-corsair-4",
+		"product_category": "memoria-ram",
+		"amount": 44
+	},
+	{
+		"id": "3dbad0cb-737a-4836-81b1-57b74d691fff",
+		"product": "HD Seagate Barracuda 2TB 3.5\" SATA III",
+		"specs": {
+			"tipo": "SATA III",
+			"cache": "256MB",
+			"marca": "Seagate",
+			"modelo": "Barracuda",
+			"capacidade": "2TB",
+			"velocidade de rotação": "7200 RPM"
+		},
+		"price": 399.99,
+		"icon_reference": "hd-seagate-2tb",
+		"product_category": "armazenamento",
+		"amount": 130
+	},
+	{
+		"id": "45727a1d-04f4-4621-9e3a-4c25aeaf596a",
+		"product": "HD Western Digital Blue 4TB 3.5\" SATA III",
+		"specs": {
+			"tipo": "SATA III",
+			"cache": "64MB",
+			"marca": "Western Digital",
+			"modelo": "Blue",
+			"capacidade": "4TB",
+			"velocidade de rotação": "5400 RPM"
+		},
+		"price": 349.99,
+		"icon_reference": "hd-western-4tb",
+		"product_category": "armazenamento",
+		"amount": 136
+	},
+	{
+		"id": "1143a6b1-bfce-4450-b40e-b9c20aebb20b",
+		"product": "Headset Gamer HyperX Cloud II Preto/Vermelho, KHX-HSCP-RD",
+		"specs": {
+			"peso": "320g",
+			"tipo": "Over-ear",
+			"marca": "HyperX",
+			"conexão": "USB",
+			"som surround": "7.1 Virtual Surround Sound",
+			"sensibilidade": "98 dB",
+			"compatibilidade": "PC, Mac, PS4, Xbox One, Nintendo Switch e dispositivos móveis",
+			"comprimento do cabo": "1m + extensão de 2m",
+			"cancelamento de ruído": "Sim",
+			"resposta de frequência": "15Hz–25.000 Hz",
+			"sensibilidade do microfone": "-39dBV (0dB=1V/Pa,1kHz)",
+			"resposta de frequência do microfone": "50Hz-18,000 Hz"
+		},
+		"price": 499.99,
+		"icon_reference": "headset-hyperx-cloud",
+		"product_category": "headset",
+		"amount": 117
+	},
+	{
+		"id": "1a26daf4-8a37-4f85-a858-c6de57aa0d01",
+		"product": "Memória RAM Corsair Vengeance LPX 8GB DDR4 2400MHz C16 - Preto",
+		"specs": {
+			"cor": "Preto",
+			"tipo": "DDR4",
+			"marca": "Corsair",
+			"modelo": "Vengeance LPX",
+			"latência": "C16",
+			"capacidade": "8GB",
+			"velocidade": "2400MHz"
+		},
+		"price": 299.99,
+		"icon_reference": "ram-corsair-8",
+		"product_category": "memoria-ram",
+		"amount": 137
+	},
+	{
+		"id": "3cf42756-8148-4527-b98a-e6c81132c48f",
+		"product": "PROCESSADOR INTEL CORE I7-10700, 8-CORE, 16-THREADS, 2.9GHZ (4.8GHZ TURBO), CACHE 16MB, LGA1200",
+		"specs": {
+			"TDP": "65 W",
+			"soquete": "LGA1200",
+			"clock básico": "2.9GHz",
+			"cachê L3 total": "16MB",
+			"nº de threads:": 16,
+			"linha de produto": "Intel Core i7 Processors",
+			"total de Cache L2": "2MB",
+			"clock de max boost": "Até 4.8GHz",
+			"família de produto": "Intel Core Processors",
+			"nº de núcleos de CPU": 8
+		},
+		"price": 2029.99,
+		"icon_reference": "proc-intel7-10700",
+		"product_category": "processadores",
+		"amount": 112
+	},
+	{
+		"id": "89ff0f89-e2d7-4e43-9626-2e75a8e1e55a",
+		"product": "Headset Gamer Sem Fio Logitech G733 7.1 Dolby Surround RGB LIGHTSYNC, Blue VOICE para PC e PlayStation, Preto - 981-000863",
+		"specs": {
+			"peso": "278g",
+			"marca": "Logitech",
+			"drivers": "Pro-G de 40mm",
+			"conexão": "Wireless",
+			"microfone": "cardioide",
+			"som surround": "DTS Headphone:X 2.0",
+			"compatibilidade": "PC, PS4, PS5",
+			"autonomia da bateria": "até 29 horas"
+		},
+		"price": 949.99,
+		"icon_reference": "headset-logitech-g733",
+		"product_category": "headset",
+		"amount": 144
+	},
+	{
+		"id": "09493fbd-d42e-4da5-8227-ebe63358960f",
+		"product": "Headset Gamer Sem Fio Logitech G935 7.1 Dolby Surround, RGB LIGHTSYNC, Drivers de Áudio Avançado para PC, PlayStation e Xbox",
+		"specs": {
+			"tipo": "Over-ear",
+			"marca": "Logitech",
+			"bateria": "12 horas",
+			"drivers": "50 mm",
+			"conexão": "Wireless",
+			"flexível": "sim",
+			"som surround": "DTS Headphone:X 2.0",
+			"compatibilidade": "PC, PS4, Nintendo Switch e dispositivos móveis",
+			"tipo do microfone": "Cardioide",
+			"cancelamento de ruído": "Sim",
+			"resposta de frequência": "20 Hz - 20 KHz"
+		},
+		"price": 1049.99,
+		"icon_reference": "headset-logitech-g935",
+		"product_category": "headset",
+		"amount": 62
+	},
+	{
+		"id": "0850173a-53a8-4466-8850-010b04d9e545",
+		"product": "Smartphone Xiaomi Redmi Note 10 Pro Cinza 128GB, 6GB RAM, Tela de 6.67”, Câmera Traseira Quádrupla, Android 11 e Processador Octa Core",
+		"specs": {
+			"cor": "Cinza",
+			"tela": "6.67 polegadas, AMOLED, resolução 1080 x 2400 pixels, taxa de atualização 120Hz",
+			"marca": "Xiaomi",
+			"modelo": "Redmi Note 10 Pro",
+			"bateria": "5020 mAh, carregamento rápido 33W",
+			"memoria_ram": "6GB",
+			"processador": "Qualcomm Snapdragon 732G, octa-core",
+			"armazenamento": "128GB, expansível com cartão microSD",
+			"conectividade": "Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.1, GPS, NFC",
+			"camera_frontal": "16 MP",
+			"camera_traseira": "108 MP (principal), 8 MP (ultrawide), 5 MP (macro), 2 MP (profundidade)",
+			"sistema_operacional": "Android 11, MIUI 12",
+			"outras_caracteristicas": "Leitor de impressão digital lateral, alto-falantes estéreo, conector para fones de ouvido de 3,5 mm"
+		},
+		"price": 2799.9,
+		"icon_reference": "xiaomi-note-10",
+		"product_category": "smartphones",
+		"amount": 65
+	},
+	{
+		"id": "5bd901e5-7e9e-4106-8ec0-9c115e95c9cd",
+		"product": "Teclado Mecânico HyperX Alloy Origins Core RGB, Switch Red, ABNT2",
+		"specs": {
+			"tipo": "Mecânico",
+			"marca": "HyperX",
+			"layout": "ABNT2",
+			"conexão": "USB Type-C",
+			"iluminação": "RGB",
+			"comprimento do cabo": "1,8 metros",
+			"tecnologia dos switches": "HyperX Red",
+			"vida útil dos switches": "80 milhões de cliques"
+		},
+		"price": 449.9,
+		"icon_reference": "keyboard-hyperx-alloy",
+		"product_category": "teclados",
+		"amount": 53
+	},
+	{
+		"id": "40f2dcd3-0c4f-419a-a612-f52f48770f65",
+		"product": "Monitor Gamer Asus Rog Swift 27 POL. 2K WQHD G-Sync 165 HZ OC, PG279Q",
+		"specs": {
+			"Pivot": "Sim",
+			"marca": "Asus",
+			"modelo": "ROG Swift PG279QZ",
+			"conexoes": "HDMI, DisplayPort",
+			"Rotação": "Sim",
+			"resolucao": "2560 x 1440 pixels",
+			"tecnologias": "G-Sync, Flicker-Free, Low Blue Light",
+			"Inclinação": "Sim",
+			"tipo de painel": "IPS",
+			"tamanho da tela": "27 polegadas",
+			"Ajuste de altura": "Sim",
+			"tempo de resposta": "1ms",
+			"taxa de atualizacao": "165 Hz",
+			"Alto-falantes integrados": "Sim",
+			"Controle de luz ambiente": "SIm"
+		},
+		"price": 2499.99,
+		"icon_reference": "monitor-asus-swift",
+		"product_category": "monitores",
+		"amount": 119
+	},
+	{
+		"id": "c0150468-1e64-44ec-aaa4-f0a894645187",
+		"product": "Monitor Gamer Samsung Odyssey Neo G9 49 MiniLED, 240Hz, 1ms",
+		"specs": {
+			"Peso": "16,7 kg",
+			"Brilho": "1000 cd/m²",
+			"Ajustes": "Inclinação, rotação e altura ajustáveis",
+			"Conexões": "2x DisplayPort 1.4, 1x HDMI 2.1, 2x USB 3.0, 1x USB-C",
+			"Contraste": "1.000.000:1",
+			"Dimensões": "1149,7 x 523,9 x 336,1 mm",
+			"Resolução": "Dual Quad HD (5120 x 1440)",
+			"Tipo de painel": "MiniLED",
+			"Tamanho da tela": "49 polegadas",
+			"Tempo de resposta": "1ms (GTG)",
+			"Ângulo de visão": "178°(H)/178°(V)",
+			"Consumo de energia": "Max 400W",
+			"Recursos especiais": "G-Sync, FreeSync, Flicker-Free, Low Blue Light, HDR1000",
+			"Taxa de atualização": "240Hz"
+		},
+		"price": 11199.99,
+		"icon_reference": "monitor-samsung-odyssey",
+		"product_category": "monitores",
+		"amount": 92
+	},
+	{
+		"id": "781639b6-f2d8-43d8-b918-d4824afe3d4e",
+		"product": "PROCESSADOR AMD RYZEN 7 5800, 8-CORES, 16-THREADS, 3.8GHZ (4.7GHZ TURBO), CACHE 36MB, AM4, 100-100000063WOF",
+		"specs": {
+			"TDP": "105 W",
+			"soquete": "AM4",
+			"clock básico": "3.8GHz",
+			"cachê L3 total": "32MB",
+			"nº de threads:": 16,
+			"linha de produto": "AMD Ryzen™ 7 Desktop Processors",
+			"total de Cache L2": "4MB",
+			"clock de max boost": "Até 4.7GHz",
+			"família de produto": "AMD Ryzen™ Processors",
+			"nº de núcleos de CPU": 8
+		},
+		"price": 2999.9,
+		"icon_reference": "proc-ryz7-5800",
+		"product_category": "processadores",
+		"amount": 56
+	},
+	{
+		"id": "515cf24e-56eb-4a9b-ac12-8bf1539d3c01",
+		"product": "Processador Intel Core i3-10100F, 3.6GHz (4.3GHz Max Boost), Cache 6MB, Quad Core, 8 Threads, LGA 1200 - BX8070110100F",
+		"specs": {
+			"TDP": "65 W",
+			"cache": "6 MB Intel® Smart Cache",
+			"soquete": "LGA1200",
+			"codinome": "Comet Lake",
+			"clock básico": "3.6 GHz",
+			"nº de threads:": 8,
+			"linha de produto": "10ª Geração de processadores Intel® Core™ i3",
+			"clock de max boost": "Até 4.3GHz",
+			"nº de núcleos de CPU": 4,
+			"velocidade do barramento": "8 GT/s"
+		},
+		"price": 399.99,
+		"icon_reference": "proc-intel3-10100",
+		"product_category": "processadores",
+		"amount": 48
+	},
+	{
+		"id": "c1525cbc-b3e6-481e-95da-68dc87d97c60",
+		"product": "Memória RAM Kingston HyperX Fury 8GB DDR4 3200MHz C16 - Preto",
+		"specs": {
+			"cor": "Preto",
+			"tipo": "DDR4",
+			"marca": "Kingston",
+			"modelo": "HyperX Fury",
+			"latência": "C16",
+			"capacidade": "8GB",
+			"velocidade": "3200MHz"
+		},
+		"price": 299.99,
+		"icon_reference": "ram-hyperx-8",
+		"product_category": "memoria-ram",
+		"amount": 97
+	},
+	{
+		"id": "6ae33d46-a424-4538-bbcb-5f5cc787d65f",
+		"product": "PLACA DE VIDEO POWER COLOR AMD RADEON RX 6900 XT 16GB GDDR6 256 BITS, AXRX 6900XT 16GBD6-3DH",
+		"specs": {
+			"GPU": "AMD Radeon™ RX 6900 XT",
+			"tipo": "GDDR6",
+			"marca": "PowerColor",
+			"modelo": "AXRX 6900XT 16GBD6-3DH",
+			"memória": "16GB",
+			"clock boost": "2340MHz",
+			"clock básico": "2015 MHz",
+			"clock de memória:": "16000 MHz",
+			"resolução máxima": "7680x4320",
+			"interface de memória": "256 bits"
+		},
+		"price": 5799.99,
+		"icon_reference": "vboard-rx-6900xt",
+		"product_category": "placa-de-video",
+		"amount": 56
+	},
+	{
+		"id": "225c42c8-034c-4d47-97d0-19b4c8d16b8a",
+		"product": "Sony PlayStation 4 (1 TB) - Preto",
+		"specs": {
+			"cor": "Preto",
+			"peso": "2,1 kg",
+			"marca": "Sony",
+			"modelo": "PlayStation 4",
+			"áudio": "Áudio de formato Dolby Digital 5.1, DTS 5.1, PCM linear 2ch, saída via HDMI",
+			"dimensões": "275 x 53 x 305 mm",
+			"processador": "Single-chip custom processor",
+			"armazenamento": "1 TB",
+			"conectividade": "Wi-Fi 802.11 b/g/n, Ethernet, Bluetooth 4.0",
+			"compatibilidade": "Jogos para PlayStation 4, Jogos para PlayStation 3 (via retrocompatibilidade)",
+			"portas e interfaces": "2 portas USB 3.1, 1 porta HDMI, 1 porta Ethernet, 1 porta auxiliar",
+			"sistema Operacional": "PlayStation OS",
+			"resolução de Vídeo": "1080p, 1080i, 720p, 480p, 480i"
+		},
+		"price": 2199.99,
+		"icon_reference": "sony-playstation-4",
+		"product_category": "consoles",
+		"amount": 110
+	},
+	{
+		"id": "b654917f-1805-436f-abdd-b322e48975d4",
+		"product": "Controle Xbox Wireless - Carbon Black",
+		"specs": {
+			"cor": "Carbon Black",
+			"peso": "287 g",
+			"marca": "Microsoft",
+			"modelo": "Xbox Wireless Controller",
+			"bateria": "Pilha AA, duração média de até 40 horas",
+			"botões": "2 sticks analógicos, 1 direcional, 1 botão Xbox, 1 botão Compartilhar, 1 botão Menu, 4 botões A/B/X/Y, 4 gatilhos, 4 botões superiores, 2 botões laterais",
+			"conexão": "Wireless, Bluetooth",
+			"sensores": "Acelerômetro, giroscópio",
+			"dimensões": "157 x 70 x 105 mm",
+			"compatibilidade": "Xbox Series X, Xbox Series S, Xbox One, Windows 10"
+		},
+		"price": 499.99,
+		"icon_reference": "xbox-wireless-controller",
+		"product_category": "controles",
+		"amount": 127
+	},
+	{
+		"id": "27646255-58c6-43b4-9f5d-6e023e66d583",
+		"product": "Microsoft Xbox One S (1 TB) - Branco",
+		"specs": {
+			"cor": "Branco",
+			"peso": "2,9 kg",
+			"marca": "Microsoft",
+			"modelo": "Xbox One S",
+			"áudio": "Dolby Atmos, DTS:X, Dolby Digital 5.1, PCM 2.0, 5.1 e 7.1",
+			"dimensões": "295 x 230 x 64 mm",
+			"processador": "AMD custom de 8 núcleos",
+			"armazenamento": "1 TB",
+			"conectividade": "Wi-Fi 802.11ac, Ethernet, Bluetooth 4.0",
+			"compatibilidade": "Jogos para Xbox One, Jogos para Xbox 360 (via retrocompatibilidade)",
+			"portas e interfaces": "2 portas HDMI (1 entrada e 1 saída), 3 portas USB 3.0, 1 porta Ethernet, 1 porta S/PDIF, 1 porta IR Blaster",
+			"sistema Operacional": "Xbox OS",
+			"resolução de Vídeo": "4K Ultra HD, HDR, 1080p, 720p, 480p"
+		},
+		"price": 1699.99,
+		"icon_reference": "microsoft-xbox-one",
+		"product_category": "consoles",
+		"amount": 114
+	},
+	{
+		"id": "6623dd6d-e3ca-47ca-b424-f1be5b7001b5",
+		"product": "PROCESSADOR INTEL CORE I9-11900, 8-CORE, 16-THREADS, 2.5GHZ (5.2GHZ TURBO), CACHE 16MB, LGA1200",
+		"specs": {
+			"TDP": "65 W",
+			"soquete": "LGA1200",
+			"clock básico": "2.5GHz",
+			"cachê L3 total": "16MB",
+			"nº de threads:": 16,
+			"linha de produto": "Intel Core i9 Processors",
+			"total de Cache L2": "2MB",
+			"clock de max boost": "Até 5.2GHz",
+			"família de produto": "Intel Core Processors",
+			"nº de núcleos de CPU": 8
+		},
+		"price": 3949.99,
+		"icon_reference": "proc-intel9-11900",
+		"product_category": "processadores",
+		"amount": 130
+	},
+	{
+		"id": "e9823ae7-b9fa-43cd-8cbe-c8ee90ff33ab",
+		"product": "PROCESSADOR AMD RYZEN 3 3200G, 4-CORE, 4-THREADS, 3.6GHZ (4GHZ TURBO), CACHE 6MB, AM4, YD3200C5FHBOX",
+		"specs": {
+			"TDP": "65 W",
+			"soquete": "AM4",
+			"clock básico": "3.6GHz",
+			"cachê L3 total": "6MB",
+			"modelo gráfico": "AMD Radeon™ Vega 8 Graphics",
+			"nº de threads:": 4,
+			"linha de produto": "AMD Ryzen™ 3 Desktop Processors with Radeon™ Vega Graphics",
+			"total de Cache L2": "2MB",
+			"clock de max boost": "Até 4GHz",
+			"família de produto": "AMD Ryzen™ Processors",
+			"frequência gráfica": "1250 MHz",
+			"nº de núcleos de CPU": 4,
+			"nº de núcleos de GPU": 8
+		},
+		"price": 949.99,
+		"icon_reference": "proc-ryz3-3200",
+		"product_category": "processadores",
+		"amount": 114
+	},
+	{
+		"id": "c686b839-dbfc-4873-b5d8-bdecbf5003ae",
+		"product": "PC Gamer AMD Ryzen 9 5900X (RTX 3080, 32GB RAM, 1TB SSD, 4TB HDD)",
+		"specs": {
+			"hd": "Seagate Barracuda 4TB 3.5\" 5400RPM",
+			"cpu": "AMD Ryzen 9 5900X 3.7GHz 12-Core",
+			"gpu": "NVIDIA GeForce RTX 3080 10GB GDDR6X",
+			"ram": "Corsair Dominator Platinum RGB 32GB (2 x 16GB) DDR4 3600MHz",
+			"ssd": "Samsung 980 PRO 1TB PCIe NVMe Gen4",
+			"fonte": "EVGA SuperNOVA 1000 G5 1000W 80 Plus Gold",
+			"gabinete": "Gabinete Gamer DEEPCOOL QUADSTELLAR INFINITY, RGB, Lateral de vidro, Preto, R-QUADSTELLAR-G-1",
+			"placa-mãe": "ASUS ROG Crosshair VIII Hero (Wi-Fi) ATX AM4",
+			"sistema_operacional": "Windows 10 Pro"
+		},
+		"price": 13999.99,
+		"icon_reference": "pc-gamer-amd",
+		"product_category": "computadores",
+		"amount": 117
+	},
+	{
+		"id": "cd58c006-10ef-40e0-a37d-45fe92711c70",
+		"product": "PROCESSADOR AMD RYZEN 5 5500, 6-CORE, 12-THREADS, 3.6GHZ (4.2GHZ TURBO), CACHE 19MB, AM4, 100-100000457BOX",
+		"specs": {
+			"TDP": "65 W",
+			"soquete": "AM4",
+			"plataforma": "Boxed Processor",
+			"clock básico": "3.9GHz",
+			"cachê L3 total": "16MB",
+			"modelo gráfico": "Radeon™ Graphics",
+			"nº de threads:": 12,
+			"linha de produto": "AMD Ryzen™ 5 5000 G-Series Desktop Processors with Radeon™ Graphics",
+			"total de Cache L2": "3MB",
+			"clock de max boost": "Até 4.4GHz",
+			"família de produto": "AMD Ryzen™ Processors",
+			"frequência gráfica": "1900 MHz",
+			"nº de núcleos de CPU": 6,
+			"nº de núcleos de GPU": 7
+		},
+		"price": 1329.99,
+		"icon_reference": "proc-ryz-5",
+		"product_category": "processadores",
+		"amount": 100
+	},
+	{
+		"id": "6e742285-44d2-42e3-a920-10045e4af183",
+		"product": "PC Gamer Intel i7-11700K (RTX 3080, 32GB RAM, 1TB SSD, 2TB HDD)",
+		"specs": {
+			"hd": "Seagate Barracuda 2TB 7200RPM",
+			"cpu": "Intel Core i7-11700K",
+			"gpu": "Nvidia GeForce RTX 3080",
+			"ram": "Corsair Vengeance RGB Pro 32GB (2x16GB) DDR4 3600MHz",
+			"ssd": "Samsung 970 EVO Plus 1TB NVMe M.2",
+			"fonte": "Corsair RM850x 850W 80 Plus Gold",
+			"gabinete": "NZXT H510 Elite",
+			"placa mãe": "ASUS ROG STRIX Z590-E GAMING WIFI",
+			"sistema operacional": "Windows 10 Home"
+		},
+		"price": 12399.99,
+		"icon_reference": "pc-gamer-intel",
+		"product_category": "computadores",
+		"amount": 74
+	},
+	{
+		"id": "5e68117e-4c97-4e08-b79d-04c1dbbb284a",
+		"product": "Fonte de Alimentação Corsair CX550 550W 80 Plus Bronze",
+		"specs": {
+			"marca": "Corsair",
+			"potência": "550W",
+			"proteção": "OVP, UVP, SCP, OPP, OTP, OCP, NLO",
+			"eficiência": "80 Plus Bronze",
+			"modularidade": "Não modular"
+		},
+		"price": 429.9,
+		"icon_reference": "psu-corsair-550w",
+		"product_category": "fontes",
+		"amount": 102
+	},
+	{
+		"id": "c769e671-2291-46f8-9779-da199d1f41e5",
+		"product": "Smartphone Asus Zenfone 8 5G ZS590KS-2A079BR, 8GB RAM, 256GB, Câmera Dupla 64MP, Tela 5.92, Preto - 90AI0061-M00850",
+		"specs": {
+			"GPU": "Adreno 660",
+			"cor": "Preto",
+			"tela": "5,9 polegadas, AMOLED, FHD+, 120Hz, HDR10+",
+			"marca": "Asus",
+			"modelo": "Zenfone 8 5G",
+			"bateria": "4.000 mAh com carregamento rápido de 30W",
+			"processador": "Qualcomm Snapdragon 888",
+			"memória RAM": "6GB ou 8GB LPDDR5",
+			"conectividade": "5G, Wi-Fi 6, Bluetooth 5.2, NFC, USB-C 2.0",
+			"câmera frontal": "12MP",
+			"câmera traseira": "64MP + 12MP",
+			"sistema operacional": "Android 11 com ZenUI 8",
+			"armazenamento interno": "128GB ou 256GB UFS 3.1"
+		},
+		"price": 2999.99,
+		"icon_reference": "asus-zenfone-8",
+		"product_category": "smartphones",
+		"amount": 20
+	},
+	{
+		"id": "4bf73c39-7029-49bc-990b-708b9bcfb0aa",
+		"product": "Sony Playstation 5 (825 GB) - Branco",
+		"specs": {
+			"cor": "Branco",
+			"peso": "4,5 kg",
+			"marca": "Sony",
+			"modelo": "Playstation 5",
+			"áudio": "Áudio 3D, Dolby Atmos",
+			"bateria": "Não aplicável",
+			"sensores": "Acelerômetro, giroscópio, sensor de proximidade",
+			"dimensões": "390 x 104 x 260 mm",
+			"processador": "CPU AMD Zen 2, GPU AMD RDNA 2, 10.28 TFLOPS",
+			"armazenamento": "825 GB SSD",
+			"conectividade": "Wi-Fi 6, Ethernet, Bluetooth 5.1, USB 3.1, HDMI 2.1",
+			"compatibilidade": "Jogos para Playstation 5 e retrocompatibilidade com jogos para Playstation 4",
+			"portas e interfaces": "2 portas USB 3.1, 1 porta USB Type-C, 1 porta Ethernet, 1 porta HDMI 2.1",
+			"sistema Operacional": "Playstation OS",
+			"resolução de Vídeo": "4K, HDR, 120 fps"
+		},
+		"price": 4899.99,
+		"icon_reference": "sony-playstation-5",
+		"product_category": "consoles",
+		"amount": 46
+	},
+	{
+		"id": "6e405209-7bd8-4fb3-ad20-ca53503c714e",
+		"product": "PROCESSADOR AMD RYZEN 9 5900X, 12-CORES, 24-THREADS, 3.7GHZ (4.8GHZ TURBO), CACHE 70MB, AM4, 100-100000061WOF",
+		"specs": {
+			"TDP": "105 W",
+			"soquete": "AM4",
+			"clock básico": "3.7GHz",
+			"cachê L3 total": "70MB",
+			"nº de threads:": 24,
+			"linha de produto": "AMD Ryzen™ 9 Desktop Processors",
+			"total de Cache L2": "6MB",
+			"clock de max boost": "Até 4.8GHz",
+			"família de produto": "AMD Ryzen™ Processors",
+			"nº de núcleos de CPU": 12
+		},
+		"price": 3599.99,
+		"icon_reference": "proc-ryz9-5900",
+		"product_category": "processadores",
+		"amount": 34
+	},
+	{
+		"id": "633b944c-a648-45c2-94ba-3a5505085969",
+		"product": "Smartphone Samsung Galaxy S21 Ultra 256GB Preto 5G - 12GB RAM Tela 6,8” Câm. Quádrupla + Selfie 40MP",
+		"specs": {
+			"GPU": "Mali-G78 MP14",
+			"cor": "Phantom Black",
+			"tela": "Dynamic AMOLED 2X 6.8''",
+			"marca": "Samsung",
+			"modelo": "Galaxy S21 Ultra 5G",
+			"bateria": "5000mAh",
+			"processador": "Exynos 2100",
+			"memória RAM": "12GB",
+			"armazenamento": "256GB",
+			"câmera frontal": "40MP",
+			"câmera traseira": "108MP + 12MP + 10MP + 10MP",
+			"resolução da tela": "3200 x 1440 pixels",
+			"sistema operacional": "Android 11, One UI 3.1",
+			"carregamento rápido": "25W",
+			"carregamento sem fio": "15W"
+		},
+		"price": 6999.99,
+		"icon_reference": "samsung-s21-ultra",
+		"product_category": "smartphones",
+		"amount": 83
+	},
+	{
+		"id": "5e9d9043-93fe-41f2-ac4b-0197cc215259",
+		"product": "Apple iPhone 13 Pro Max (1TB) - Grafite",
+		"specs": {
+			"cor": "grafite",
+			"ram": "6GB",
+			"rede": "5G",
+			"tela": "Super Retina XDR",
+			"wifi": "802.11 a/b/g/n/ac/6",
+			"marca": "Apple",
+			"modelo": "iPhone 13 Pro Max",
+			"portas": "Lightning",
+			"bateria": "4352 mAh",
+			"tamanho": "6.7 polegadas",
+			"bluetooth": "5.0",
+			"resolucao": "2778 x 1284 pixels",
+			"processador": "Apple A15 Bionic",
+			"armazenamento": "1TB",
+			"câmera frontal": "12 MP (wide)",
+			"câmera traseira": "12 MP (wide), 12 MP (ultrawide), 12 MP (telephoto)",
+			"sistema_operacional": "iOS 15.1"
+		},
+		"price": 11399.99,
+		"icon_reference": "iphone-13-promax",
+		"product_category": "smartphones",
+		"amount": 129
+	},
+	{
+		"id": "eb7cb071-e1ce-4c79-988d-31cd25dfcbfa",
+		"product": "PLACA DE VIDEO GIGABYTE GEFORCE RTX 2080 8GB GDDR6 256-BIT, GV-N2080WF3-8GC",
+		"specs": {
+			"GPU": "GeForce RTX 2080",
+			"tipo": "GDDR6",
+			"marca": "Gigabyte",
+			"modelo": "GV-N2080WF3-8GC",
+			"memória": "8GB",
+			"clock boost": "1710 MHz",
+			"clock básico": "1515 MHz",
+			"clock de memória:": "14000 MHz",
+			"resolução máxima": "7680x4320",
+			"interface de memória": "256 bits"
+		},
+		"price": 5069.99,
+		"icon_reference": "vboard-rtx-2080",
+		"product_category": "placa-de-video",
+		"amount": 93
+	},
+	{
+		"id": "38ab4c11-7955-42ff-bb07-e361393482e7",
+		"product": "Processador Intel Core i5-10400, 2.9GHz (4.3GHz Max Turbo), Cache 12MB, LGA 1200 - BX8070110400",
+		"specs": {
+			"TDP": "65 W",
+			"cache": "12 MB Intel® Smart Cache",
+			"soquete": "LGA1200",
+			"codinome": "Comet Lake-S",
+			"clock básico": "2.9GHz",
+			"Suporte para 4K": "Sim, à 60hz",
+			"modelo gráfico": "Gráficos UHD Intel® 630",
+			"nº de threads:": 12,
+			"linha de produto": "10ª Geração de processadores Intel® Core™ i5",
+			"clock de max boost": "Até 4.3GHz",
+			"frequência gráfica": "350 MHz",
+			"nº de núcleos de CPU": 6,
+			"velocidade do barramento": "8 GT/s",
+			"Máxima frequência dinâmica da placa gráfica": "1.10 GHz"
+		},
+		"price": 889.99,
+		"icon_reference": "proc-intel5-10400",
+		"product_category": "processadores",
+		"amount": 45
+	},
+	{
+		"id": "3dbe29f7-ddad-449b-b353-f9ef82801081",
+		"product": "Controle DualShock 4 Wireless - Preto",
+		"specs": {
+			"cor": "Preto",
+			"peso": "210 g",
+			"marca": "Sony",
+			"modelo": "DualShock 4 Wireless Controller",
+			"bateria": "Bateria de íon de lítio recarregável, duração média de 4 a 8 horas",
+			"botões": "2 sticks analógicos, 1 direcional, 1 botão PlayStation, 1 botão Share, 1 botão Options, 4 botões frontais (Triângulo, Círculo, Cruz, Quadrado), 4 gatilhos, 4 botões superiores, Touchpad",
+			"conexão": "Wireless, Bluetooth",
+			"sensores": "Acelerômetro, giroscópio, sensor de toque no touchpad",
+			"dimensões": "161 x 57 x 100 mm",
+			"compatibilidade": "PlayStation 4, PC (com adaptador)"
+		},
+		"price": 299.99,
+		"icon_reference": "dualshock4-wireless-controller",
+		"product_category": "controles",
+		"amount": 72
+	},
+	{
+		"id": "267b6300-1e17-40e2-b93e-d351df2c0b2c",
+		"product": "Controle Pro Nintendo Switch",
+		"specs": {
+			"cor": "Preto",
+			"peso": "approx. 246 g",
+			"marca": "Nintendo",
+			"bateria": "Bateria de íon de lítio, duração média de até 40 horas",
+			"botões": "2 sticks analógicos, 1 direcional, 1 botão Nintendo, 1 botão Home, 1 botão Captura, 4 botões frontais (A/B/X/Y), 4 gatilhos, 4 botões superiores",
+			"conexão": "Sem fio, Bluetooth",
+			"sensores": "Acelerômetro, sensor giroscópio",
+			"dimensões": "106 x 152 x 60 mm",
+			"compatibilidade": "Nintendo Switch"
+		},
+		"price": 399.99,
+		"icon_reference": "nintendo-switch-pro-controller",
+		"product_category": "controles",
+		"amount": 83
+	},
+	{
+		"id": "89fedb15-06d2-440d-a79d-fff8e2fa987a",
+		"product": "PLACA DE VIDEO GIGABYTE GEFORCE GTX 1050 TI 4GB GDDR5 128-BIT, GV-N105TD5-4GD",
+		"specs": {
+			"GPU": "GeForce® GTX 1050 Ti",
+			"tipo": "GDDR5",
+			"marca": "Gigabyte",
+			"modelo": "GV-N105TD5-4GD",
+			"memória": "4GB",
+			"clock boost": "1392MHz",
+			"clock básico": "1290 MHz",
+			"clock de memória:": "7008 MHz",
+			"resolução máxima": "7680x4320",
+			"interface de memória": "128 bits"
+		},
+		"price": 1352.27,
+		"icon_reference": "vboard-gtx-1050",
+		"product_category": "placa-de-video",
+		"amount": 87
+	},
+	{
+		"id": "d7014076-4412-41f4-88ec-aa732bf263db",
+		"product": "Monitor Gamer LG Ultra Gear 27 Full HD, 144 Hz, 1ms, IPS, HDMI e DisplayPort, sRGB 99%, HDR10, FreeSync, VESA, Altura Ajustável - 27GL650F-B",
+		"specs": {
+			"Marca": "LG",
+			"Modelo": "27GL650F-B",
+			"Resolução": "1920x1080 Full HD",
+			"Conectividade": "2x HDMI, DisplayPort",
+			"Tipo de painel": "IPS",
+			"Tempo de resposta": "1ms",
+			"Taxa de atualização": "144Hz"
+		},
+		"price": 1399.99,
+		"icon_reference": "monitor-LG-ultragear",
+		"product_category": "monitores",
+		"amount": 94
+	},
+	{
+		"id": "08d13301-661b-4f98-a7ca-bb45dfa19f30",
+		"product": "Microsoft Xbox Series S (512 GB) - Branco",
+		"specs": {
+			"cor": "Branco",
+			"peso": "1,93 kg",
+			"marca": "Microsoft",
+			"modelo": "Xbox Series S",
+			"áudio": "Dolby Digital 5.1, DTS 5.1, Dolby TrueHD with Atmos, LPCM 7.1",
+			"dimensões": "275 x 151 x 63.5 mm",
+			"processador": "CPU de 8 núcleos AMD Zen 2, GPU AMD RDNA 2, 4 TFLOPS",
+			"armazenamento": "512 GB SSD",
+			"conectividade": "Wi-Fi 802.11ac, Ethernet, Bluetooth 5.0",
+			"compatibilidade": "Jogos para Xbox Series X|S, Jogos para Xbox One (via retrocompatibilidade)",
+			"portas e interfaces": "1 porta HDMI 2.1, 3 portas USB 3.1, 1 porta Ethernet, 1 porta S/PDIF",
+			"sistema Operacional": "Xbox OS",
+			"resolução de Vídeo": "1440p, 1080p, 720p"
+		},
+		"price": 2099.99,
+		"icon_reference": "microsoft-xbox-series-s",
+		"product_category": "consoles",
+		"amount": 135
+	},
+	{
+		"id": "aba7e4a3-dd61-49bb-a3ab-ddbd7d73154f",
+		"product": "Microsoft Xbox Series X (1 TB) - Preto",
+		"specs": {
+			"cor": "Preto",
+			"peso": "4,45 kg",
+			"marca": "Microsoft",
+			"modelo": "Xbox Series X",
+			"áudio": "Dolby Digital 5.1, DTS 5.1, Dolby TrueHD with Atmos, LPCM 7.1",
+			"dimensões": "301 x 151 x 151 mm",
+			"processador": "CPU de 8 núcleos AMD Zen 2, GPU AMD RDNA 2, 12 TFLOPS",
+			"armazenamento": "1 TB SSD",
+			"conectividade": "Wi-Fi 802.11ax, Ethernet, Bluetooth 5.0",
+			"compatibilidade": "Jogos para Xbox Series X|S, Jogos para Xbox One (via retrocompatibilidade)",
+			"portas e interfaces": "1 porta HDMI 2.1, 3 portas USB 3.1, 1 porta Ethernet, 1 porta S/PDIF",
+			"sistema Operacional": "Xbox OS",
+			"resolução de Vídeo": "4K, 8K, HDR, 120 fps, Variable Refresh Rate (VRR)"
+		},
+		"price": 4299.99,
+		"icon_reference": "microsoft-xbox-series-x",
+		"product_category": "consoles",
+		"amount": 83
+	},
+	{
+		"id": "f620aae7-f37a-4b69-be73-2dc9a678e249",
+		"product": "Nintendo Switch (32 GB) - Cinza",
+		"specs": {
+			"cor": "Cinza",
+			"peso": "297 g",
+			"tela": "Tela sensível ao toque de 6,2 polegadas (1280 x 720)",
+			"marca": "Nintendo",
+			"modelo": "Switch",
+			"áudio": "Alto-falantes estéreo, saída de áudio de 3,5 mm",
+			"bateria": "4310 mAh, duração média de 4,5 a 9 horas",
+			"câmera": "2 câmeras IR Motion, câmera frontal para vídeo chat",
+			"sensores": "Acelerômetro, giroscópio, sensor de brilho",
+			"dimensões": "102 x 239 x 13,9 mm",
+			"processador": "CPU NVIDIA Custom Tegra, GPU NVIDIA Custom Tegra",
+			"armazenamento": "32 GB, expansível via cartão microSD",
+			"conectividade": "Wi-Fi 802.11ac, Bluetooth 4.1, USB Type-C",
+			"compatibilidade": "Jogos para Nintendo Switch e Nintendo Switch Lite",
+			"portas e interfaces": "1 porta USB Type-C (usada para carga e conexão com o dock), 1 porta para cartão microSD",
+			"sistema Operacional": "Nintendo Switch OS",
+			"resolução de Vídeo": "1080p via dock, 720p no modo portátil"
+		},
+		"price": 2279.99,
+		"icon_reference": "nintendo-switch",
+		"product_category": "consoles",
+		"amount": 126
+	},
+	{
+		"id": "5957e8d3-0aa7-4112-8e0d-23af374de117",
+		"product": "Apple iPhone 12 (64 GB) - Branco",
+		"specs": {
+			"cor": "Branco",
+			"peso": "164 g",
+			"tela": "Super Retina XDR",
+			"marca": "Apple",
+			"modelo": "iPhone 12",
+			"bateria": "2815 mAh",
+			"sensores": "Face ID, Acelerômetro, Giroscópio, Bússola, Barômetro",
+			"dimensões": "146.7 x 71.5 x 7.4 mm",
+			"processador": "Apple A14 Bionic",
+			"armazenamento": "64 GB",
+			"conectividade": "5G, Wi-Fi 6, Bluetooth 5.0",
+			"câmera Frontal": "12 MP",
+			"tamanho da Tela": "6,1 polegadas",
+			"câmera Traseira": "12 MP (principal) + 12 MP (ultrawide)",
+			"resolução da Tela": "2532 x 1170 pixels",
+			"sistema Operacional": "iOS 14.1",
+			"gravação de Vídeo": "4K a 60fps"
+		},
+		"price": 3779.99,
+		"icon_reference": "apple-iphone-12",
+		"product_category": "smartphones",
+		"amount": 106
+	}
+]
