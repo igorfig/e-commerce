@@ -61,6 +61,11 @@ export function Sidebar({ isActive }) {
 				</SidebarHeader>
 
 				<Options ref={OptionsContainerRef}>
+					{!token && <LinkButton to="/cadastro">
+						<img src={userImg}/>
+						Cadastrar
+					</LinkButton>}
+
 					<LinkButton to="/pedidos">
 						<img src={orderImg}/>
 						Meus pedidos
