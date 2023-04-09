@@ -96,3 +96,53 @@ Após isso, certamente a aplicação estará disponível para testes.
 <br>
 
 <img src="./.github/screenshots/favoritos-mobile.jpeg" />
+
+<br>
+<br>
+<br>
+<br>
+
+<h2> O que há no projeto? </h2>
+
+<p>
+O projeto possui uma página Home "/", no qual possui a apresentação de todos os produtos e ações que podem ser executadas pelo usuário, como uma barra de pesquisa de produtos, uma sidebar com algumas páginas acessíveis do site e os produtos por sessões.
+</p>
+
+<br>
+
+<p>
+	Há uma página de carrinho, onde o usuário pode ver os produtos que foram adicionados, e também finalizar seu pedido de compra.
+</p>
+
+<br>
+
+
+<p>
+	Neste projeto tem um sistema de autenticação que é usado JWT tokens para validações, também há possibilidades de cadastrar novos usuários.
+</p>
+
+<br>
+
+<p>
+	Com o usuário autenticado, temos a possibilidade de finalizar pedidos do carrinho e adicionar aos favoritos, cada valor salvo desse é armazenado no banco de dados postgreSQL referenciando o usuário logado.
+</p>
+
+<br>
+
+<p>
+	Temos uma página que se encontra os produtos em favoritos, que foram adicionados pelo usuário, a página de pedidos que é uma página estática, apenas com estilização. É para essa página que os produtos que tiveram seus pedidos finalizados no carrinho vão.
+</p>
+
+<br>
+
+<p>
+	Também temos um dropdown menu no header, um carrousel animado com banners sobre a loja, uma página para cada categoria de produtos, como processadores, computadores e etc...
+</p>
+
+<p>
+	O layout do projeto foi inspirado na kabum, pichau e lojas virtuais desse ramo tech.
+</p>
+
+<strong>
+	Projeto inteiramente desenvolvido por mim.
+</strong>
